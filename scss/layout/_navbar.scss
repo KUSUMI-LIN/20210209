@@ -1,0 +1,36 @@
+@include pc-width {
+    .container {
+        
+        .navbar-brand {
+            img {
+                width: 15%;
+                display: block;
+                margin: 35px auto 0 auto;
+            }
+        }
+        .navicon{
+            position: fixed;
+            top: 5px;
+            right: 20px;
+           
+            img{
+                width: 25px;
+                margin-right: 15px;
+            }
+        } 
+        .navbar-expand-lg{
+            .navbar-collapse{
+                width: auto;
+                margin: 0 auto;
+            }
+        }
+    }
+    
+        
+}
+@include pad-width {
+}
+@include small-pad-width {
+}
+@include phone-width {
+}

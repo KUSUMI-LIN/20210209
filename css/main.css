@@ -1,0 +1,210 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media all and (min-width: 960px) {
+  .container .navbar-brand img {
+    width: 15%;
+    display: block;
+    margin: 35px auto 0 auto;
+  }
+  .container .navicon {
+    position: fixed;
+    top: 5px;
+    right: 20px;
+  }
+  .container .navicon img {
+    width: 25px;
+    margin-right: 15px;
+  }
+  .container .navbar-expand-lg .navbar-collapse {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+footer .footer-grids {
+  margin: 50px auto 0 auto;
+}
+
+footer .footer-grids .footericon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 20px auto;
+}
+
+footer .footer-grids .footericon p {
+  line-height: 3.5rem;
+}
+
+footer .footer-grids .footericon p img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+footer .footer-grids div:last-child {
+  background-color: #051014;
+  height: 10vh;
+  color: #E5E9EC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carousel .carousel-inner {
+  max-width: 938px;
+  max-height: 550px;
+  margin: 0 auto;
+}
+
+@media all and (min-width: 960px) {
+  .carousel-inner div:first-child img {
+    max-width: 938px;
+    height: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    margin: 0 auto;
+  }
+  .carousel-inner div:last-child img {
+    width: auto;
+    max-height: 550px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media all and (min-width: 760px) and (max-width: 959px) {
+  .carousel-inner div:first-child img {
+    max-width: 938px;
+    height: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    margin: 0 auto;
+  }
+  .carousel-inner div:last-child img {
+    width: auto;
+    max-height: 550px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 759px) {
+  .carousel-inner div:first-child img {
+    max-width: 938px;
+    height: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    margin: 0 auto;
+  }
+  .carousel-inner div:last-child img {
+    width: auto;
+    max-height: 550px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .carousel-inner div:first-child img {
+    max-width: 938px;
+    height: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    margin: 0 auto;
+  }
+  .carousel-inner div:last-child img {
+    width: auto;
+    max-height: 550px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin: 0 auto;
+  }
+}

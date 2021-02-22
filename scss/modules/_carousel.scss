@@ -1,0 +1,23 @@
+.carousel {
+    .carousel-inner {
+        max-width: 938px;
+        max-height: 550px;
+        margin: 0 auto;
+    }
+}
+@include pc-width {
+    @include index__carousel01;
+    @include index__carousel02;
+}
+@include pad-width {
+    @include index__carousel01;
+    @include index__carousel02;
+}
+@include small-pad-width {
+    @include index__carousel01;
+    @include index__carousel02;
+}
+@include phone-width {
+    @include index__carousel01;
+    @include index__carousel02;
+}

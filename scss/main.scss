@@ -1,0 +1,12 @@
+//var and mixin
+@import "helpers/variable";
+@import "helpers/mixin";
+
+//reset
+@import "base/reset";
+
+//css
+@import "layout/navbar";
+@import "layout/footer";
+@import "pages/index";
+@import "modules/carousel";
