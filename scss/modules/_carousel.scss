@@ -1,8 +1,14 @@
+
 .carousel {
     .carousel-inner {
         max-width: 938px;
         max-height: 550px;
-        margin: 0 auto;
+        margin: 20px auto 0 auto;
+    }
+    .carousel-indicators{
+        position: absolute;
+        bottom: -30px;
+        right: 0;
     }
 }
 @include pc-width {

@@ -53,23 +53,202 @@ table {
 }
 
 @media all and (min-width: 960px) {
-  .container .navbar-brand img {
-    width: 15%;
+  .side-menu {
+    display: none;
+  }
+  .header {
+    padding: 0;
+    background-color: #051014;
+    width: 100%;
+  }
+  .header .navbar-brand img {
+    width: 13%;
     display: block;
     margin: 35px auto 0 auto;
   }
-  .container .navicon {
+  .header .navicon {
+    position: fixed;
+    top: 10px;
+    right: 25px;
+  }
+  .header .navicon a {
+    margin-right: 10px;
+  }
+  .header .navbar-expand-lg .navbar-collapse {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+@media all and (min-width: 760px) and (max-width: 959px) {
+  html body {
+    height: 100%;
+    background-color: brown;
+  }
+  .side-menu {
+    width: 250px;
+    height: 100%;
+    padding: 50px 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  .side-menu form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 10px 50px;
+    border-radius: 100px;
+    border: 1px solid #fff;
+  }
+  .side-menu form input,
+  .side-menu form button {
+    border: none;
+    background-color: transparent;
+    padding: 5px 10px;
+    color: #fff;
+  }
+  .side-menu form input:focus,
+  .side-menu form button:focus {
+    outline: none;
+  }
+  .side-menu form input {
+    width: 230px;
+  }
+  .side-menu form button {
+    width: 50px;
+  }
+  .side-menu nav ul .Label {
+    display: none;
+  }
+  .side-menu nav li {
+    display: block;
+    padding: 10px;
+    color: chocolate;
+    text-decoration: none;
+    position: relative;
+  }
+  .side-menu nav li #side-nav-control {
+    z-index: 10;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .side-menu nav li .fas {
+    margin-right: -1.1em;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .side-menu nav li:hover .fas {
+    margin-right: 0em;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .side-menu nav li::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 0;
+  }
+}
+
+.header {
+  padding: 0;
+  background-color: #051014;
+  width: 100%;
+}
+
+.header .navbar-brand img {
+  width: 13%;
+  display: block;
+  margin: 35px auto 0 auto;
+}
+
+.header .navicon {
+  position: fixed;
+  top: 20px;
+  right: 70px;
+}
+
+.header .navicon a {
+  margin-right: 10px;
+}
+
+.header .navbar-expand-lg .navbar-toggler {
+  position: absolute;
+  bottom: 75px;
+  right: 25px;
+}
+
+.header .navbar-expand-lg .navbar-collapse {
+  width: auto;
+  margin: 0 auto;
+}
+
+@media all and (min-width: 480px) and (max-width: 759px) {
+  .header {
+    padding: 0;
+    background-color: #051014;
+    width: 100%;
+  }
+  .header .navbar-brand img {
+    width: 120px;
+    display: block;
+    margin: 35px auto 0 auto;
+  }
+  .header .navicon {
     position: fixed;
     top: 5px;
     right: 20px;
   }
-  .container .navicon img {
-    width: 25px;
-    margin-right: 15px;
-  }
-  .container .navbar-expand-lg .navbar-collapse {
+  .header .navbar-expand-lg .navbar-collapse {
     width: auto;
     margin: 0 auto;
+  }
+  .header .navbar-expand-lg button {
+    position: fixed;
+    right: 40px;
+    top: 70px;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .header {
+    padding: 0;
+    background-color: #051014;
+    width: 100%;
+  }
+  .header .navbar-brand img {
+    width: 13%;
+    display: block;
+    margin: 35px auto 0 auto;
+  }
+  .header .navicon {
+    position: fixed;
+    top: 5px;
+    right: 20px;
+  }
+  .header .navbar-expand-lg .navbar-collapse {
+    width: auto;
+    margin: 0 auto;
+  }
+  .header .navbar-expand-lg .navbar-collapse ul li .nav-link {
+    color: #fff;
   }
 }
 
@@ -107,7 +286,7 @@ footer .footer-grids .footericon p img {
 footer .footer-grids div:last-child {
   background-color: #051014;
   height: 10vh;
-  color: #E5E9EC;
+  color: #EF6461;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,13 +301,19 @@ footer .footer-grids div:last-child {
 .carousel .carousel-inner {
   max-width: 938px;
   max-height: 550px;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
+}
+
+.carousel .carousel-indicators {
+  position: absolute;
+  bottom: -30px;
+  right: 0;
 }
 
 @media all and (min-width: 960px) {
   .carousel-inner div:first-child img {
-    max-width: 938px;
-    height: auto;
+    width: auto;
+    max-height: 550px;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -148,8 +333,8 @@ footer .footer-grids div:last-child {
 
 @media all and (min-width: 760px) and (max-width: 959px) {
   .carousel-inner div:first-child img {
-    max-width: 938px;
-    height: auto;
+    width: auto;
+    max-height: 550px;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -169,8 +354,8 @@ footer .footer-grids div:last-child {
 
 @media all and (min-width: 480px) and (max-width: 759px) {
   .carousel-inner div:first-child img {
-    max-width: 938px;
-    height: auto;
+    width: auto;
+    max-height: 550px;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -190,8 +375,8 @@ footer .footer-grids div:last-child {
 
 @media all and (max-width: 479px) {
   .carousel-inner div:first-child img {
-    max-width: 938px;
-    height: auto;
+    width: auto;
+    max-height: 550px;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
