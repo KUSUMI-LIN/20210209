@@ -1,17 +1,20 @@
 //先針對media queries的width設為變數
-
-$pc-media:960px;
-$pcs-media:959px;
-$pad-media:760px;
-$pads-media:759px;
-$phone-media:480px;
-$phones-media:479px;
+$xxl-media: 1200px;
+$xl-media: 1199px;
+$xl-min-media: 992px;
+$md-media: 991px;
+$md-min-media: 768px;
+$sm-media: 767px;
+$sm-min-media: 576px;
+$xs-media: 575px;
+$xs-min-media: 480px;
+$xxs-media: 479px;
 
 //色碼
-$maincolor01:#E6AF2E;
-$maincolor02:#6D3D14;
-$Secondary-color01:#051014;
-$Secondary-color02:#EF6461;
-$Secondary-color03:#FBFFFE;
+$maincolor01: #e6af2e;
+$maincolor02: #6d3d14;
+$Secondary-color01: #051014;
+$Secondary-color02: #ef6461;
+$Secondary-color03: #fbfffe;
 
 //

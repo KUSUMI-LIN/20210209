@@ -1,5 +1,14 @@
-@include pc-width {
+html {
+    body {
+        height: 100%;
+    }
+}
+/*********大型電腦*****/
+@include big-pc-width {
     .side-menu {
+        display: none;
+    }
+    #side-menu-switch {
         display: none;
     }
     .header {
@@ -8,227 +17,128 @@
         width: 100%;
         .navbar-brand {
             img {
-                width: 13%;
+                width: 8%;
                 display: block;
-                margin: 35px auto 0 auto;
+                margin: 5px auto 0 auto;
             }
         }
         .navicon {
-            position: fixed;
-            top: 10px;
+            position: absolute;
+            top: 5px;
             right: 25px;
+            .side-menu-openBtn {
+                display: none;
+            }
+            .nav-icon {
+                color: #fff;
+                font-size: 18px;
+                margin-right: 15px;
+            }
+            form {
+                display: inline-block;
+                input {
+                    display: none;
+                    border-bottom: 1px solid #fff;
+                    border-top: 0px;
+                    border-left: 0px;
+                    border-right: 0px;
+                    outline: none;
+                    width: 120px;
+                    background: none;
+                    margin-right: 10px;
+                    &:focus {
+                        color: #fff;
+                    }
+                }
+            }
             a {
                 margin-right: 10px;
             }
         }
-        .navbar-expand-lg {
+        .navbar-expand-md {
+            padding-top: 0;
             .navbar-collapse {
                 width: auto;
                 margin: 0 auto;
+                .navbar-nav > li {
+                    margin: 0 10px;
+                }
             }
         }
     }
 }
-@include pad-width {
-    //側邊菜單
-    html {
-        body {
-            height: 100%;
-            background-color: brown;
-        }
-    }
+
+/*********電腦*****/
+@include pc-width {
     .side-menu {
-        width: 250px;
-        height: 100%;
-        padding: 50px 0;
-        box-sizing: border-box;
-        background-color: #000;
-        display: flex;
-        flex-direction: column;
-        float: left;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 100;
-        form {
-            display: flex;
-            margin: 0 10px 50px;
-            border-radius: 100px;
-            border: 1px solid #fff;
-            input,
-            button {
-                border: none;
-                background-color: transparent;
-                padding: 5px 10px;
-                color: #fff;
-                &:focus {
-                    outline: none;
-                }
-            }
-            input {
-                width: 230px;
-            }
-            button {
-                width: 50px;
-            }
-        }
-        nav {
-            ul {
-               
-                .Label {
-                    display: none;
-                }
-            }
-            li {
-                #side-nav-control{
-                    z-index: 10;
-                    position: absolute;
-                    top: 10px;
-                    right: 10px;
-                }
+        display: none;
+    }
+    #side-menu-switch {
+        display: none;
+    }
+    .header {
+        padding: 0;
+        background-color: $Secondary-color01;
+        width: 100%;
+        .navbar-brand {
+            img {
+                width: 10%;
                 display: block;
-                padding: 10px;
-                color: chocolate;
-                text-decoration: none;
-                position: relative;
-                .fas {
-                    margin-right: -1.1em;
-                    transform: scale(0);
-                    transition: 0.3s;
-                }
-                &:hover {
-                    .fas {
-                        margin-right: 0em;
-                        transform: scale(1);
-                    }
-                }
-                &::before {
-                    content: "";
-                    position: absolute;
-                    left: 10px;
-                    right: 10px;
-                    top: 0;
-                }
+                margin: 5px auto 0 auto;
             }
         }
-    }
-}
-//導覽列
-.header {
-    padding: 0;
-    background-color: $Secondary-color01;
-    width: 100%;
-    .navbar-brand {
-        img {
-            width: 13%;
-            display: block;
-            margin: 35px auto 0 auto;
-        }
-    }
-    .navicon {
-        position: fixed;
-        top: 20px;
-        right: 70px;
-        a {
-            margin-right: 10px;
-        }
-    }
-    .navbar-expand-lg {
-        .navbar-toggler {
-            position: absolute;
-            bottom: 75px;
+        .navicon {
+            position: fixed;
+            top: 5px;
             right: 25px;
+            .side-menu-openBtn {
+                display: none;
+            }
+            .nav-icon {
+                color: #fff;
+                font-size: 18px;
+                margin-right: 15px;
+            }
+            form {
+                display: inline-block;
+                input {
+                    display: none;
+                    border-bottom: 1px solid #fff;
+                    border-top: 0px;
+                    border-left: 0px;
+                    border-right: 0px;
+                    outline: none;
+                    width: 120px;
+                    background: none;
+                    margin-right: 10px;
+                    &:focus {
+                        color: #fff;
+                    }
+                }
+            }
+            a {
+                margin-right: 10px;
+            }
         }
-        .navbar-collapse {
-            width: auto;
-            margin: 0 auto;
+        .navbar-expand-md {
+            padding-top: 0;
+            .navbar-collapse {
+                width: auto;
+                margin: 0 auto;
+                .navbar-nav > li {
+                    margin: 0 10px;
+                }
+            }
         }
     }
 }
-
-
-@include small-pad-width {
-    //側邊菜單
-    html {
-        body {
-            height: 100%;
-            background-color: brown;
-        }
-    }
+/*********小型電腦*****/
+@include small-pc-width {
     .side-menu {
-        width: 250px;
-        height: 100%;
-        padding: 50px 0;
-        box-sizing: border-box;
-        background-color: #000;
-        display: flex;
-        flex-direction: column;
-        float: left;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 100;
-        form {
-            display: flex;
-            margin: 0 10px 50px;
-            border-radius: 100px;
-            border: 1px solid #fff;
-            input,
-            button {
-                border: none;
-                background-color: transparent;
-                padding: 5px 10px;
-                color: #fff;
-                &:focus {
-                    outline: none;
-                }
-            }
-            input {
-                width: 230px;
-            }
-            button {
-                width: 50px;
-            }
-        }
-        nav {
-            ul {
-               
-                .Label {
-                    display: none;
-                }
-            }
-            li {
-                #side-nav-control{
-                    z-index: 10;
-                    position: absolute;
-                    top: 10px;
-                    right: 10px;
-                }
-                display: block;
-                padding: 10px;
-                color: chocolate;
-                text-decoration: none;
-                position: relative;
-                .fas {
-                    margin-right: -1.1em;
-                    transform: scale(0);
-                    transition: 0.3s;
-                }
-                &:hover {
-                    .fas {
-                        margin-right: 0em;
-                        transform: scale(1);
-                    }
-                }
-                &::before {
-                    content: "";
-                    position: absolute;
-                    left: 10px;
-                    right: 10px;
-                    top: 0;
-                }
-            }
-        }
+        display: none;
+    }
+    #side-menu-switch {
+        display: none;
     }
     .header {
         padding: 0;
@@ -238,61 +148,156 @@
             img {
                 width: 120px;
                 display: block;
-                margin: 35px auto 0 auto;
+                margin: 5px auto 0 auto;
             }
         }
         .navicon {
             position: fixed;
-            top: 5px;
-            right: 20px;
+            top: 15px;
+            right: 25px;
+            .side-menu-openBtn {
+                display: none;
+            }
+            .nav-icon {
+                color: #fff;
+                font-size: 18px;
+                margin-right: 15px;
+            }
+            form {
+                display: inline-block;
+                input {
+                    display: none;
+                    border-bottom: 1px solid #fff;
+                    border-top: 0px;
+                    border-left: 0px;
+                    border-right: 0px;
+                    outline: none;
+                    width: 120px;
+                    background: none;
+                    margin-right: 10px;
+                    &:focus {
+                        color: #fff;
+                    }
+                }
+            }
+            a {
+                margin-right: 10px;
+            }
         }
-        .navbar-expand-lg {
+        .navbar-expand-md {
+            padding-top: 0;
             .navbar-collapse {
                 width: auto;
                 margin: 0 auto;
-            }
-            button {
-                position: fixed;
-                right: 40px;
-                top: 70px;
+                .navbar-nav > li {
+                    margin: 0 10px;
+                }
             }
         }
     }
 }
-
-@include phone-width 
-{
+/*********平板*****/
+@include pad-width {
+    .side-bg-block {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+    //導覽列
+    .header {
+        padding: 0;
+        background-color: $Secondary-color01;
+        width: 100%;
+        .navbar-brand {
+            img {
+                width: 140px;
+                display: block;
+                margin: 10px auto 0 auto;
+            }
+        }
+        .navicon {
+            position: absolute;
+            top: 35px;
+            right: 35px;
+            font-size: 25px;
+            .side-menu-openBtn {
+                background: none;
+                border: none;
+                outline: none;
+                color: #fff;
+            }
+            .side-menu-closeBtn{
+                color: #fff;
+            }
+            .nav-icon {
+                color: #fff;
+                margin-right: 20px;
+            }
+            a {
+                margin-right: 10px;
+            }
+        }
+        .navbar {
+            display: none;
+            .navbar-expand-md {
+                .navbar-collapse {
+                    width: auto;
+                    margin: 0 auto;
+                }
+                button {
+                    position: fixed;
+                    right: 40px;
+                    top: 70px;
+                }
+            }
+        }
+    }
     //側邊菜單
     html {
         body {
             height: 100%;
-            background-color: brown;
+        }
+    }
+    #side-menu-switch {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+        &:checked + .side-menu {
+            transform: translateX(0);
         }
     }
     .side-menu {
-        width: 250px;
+        width: 300px;
         height: 100%;
         padding: 50px 0;
         box-sizing: border-box;
-        background-color: #000;
+        background-color: #fff;
         display: flex;
         flex-direction: column;
         float: left;
-        position: absolute;
-        top: 0;
+        position: fixed;
+        top: 80px;
         left: 0;
         z-index: 100;
+        transform: translateX(-100%);
+        transition: 0.3s;
         form {
             display: flex;
             margin: 0 10px 50px;
             border-radius: 100px;
-            border: 1px solid #fff;
+            border: 1px solid #000;
             input,
             button {
                 border: none;
                 background-color: transparent;
                 padding: 5px 10px;
-                color: #fff;
+                color: #000;
                 &:focus {
                     outline: none;
                 }
@@ -306,13 +311,12 @@
         }
         nav {
             ul {
-               
                 .Label {
                     display: none;
                 }
             }
             li {
-                #side-nav-control{
+                #side-nav-control {
                     z-index: 10;
                     position: absolute;
                     top: 10px;
@@ -344,33 +348,310 @@
             }
         }
     }
-
+}
+/*********小平版*****/
+@include phone-width 
+{
+    .side-bg-block {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+    //導覽列
     .header {
         padding: 0;
         background-color: $Secondary-color01;
         width: 100%;
         .navbar-brand {
             img {
-                width: 13%;
+                width: 140px;
                 display: block;
-                margin: 35px auto 0 auto;
+                margin: 10px auto 0 auto;
             }
         }
         .navicon {
-            position: fixed;
-            top: 5px;
-            right: 20px;
+            position: absolute;
+            top: 35px;
+            right: 18px;
+            font-size: 20px;
+            .side-menu-openBtn {
+                background: none;
+                border: none;
+                outline: none;
+                color: #fff;
+            }
+            .side-menu-closeBtn{
+                color: #fff;
+            }
+            .nav-icon {
+                color: #fff;
+                margin-right: 20px;
+            }
+            a {
+                margin-right: 10px;
+            }
         }
-        .navbar-expand-lg {
-            .navbar-collapse {
-                width: auto;
-                margin: 0 auto;
-                ul {
-                    li {
-                        .nav-link {
-                            color: #fff;
-                        }
+        .navbar {
+            display: none;
+            .navbar-expand-md {
+                .navbar-collapse {
+                    width: auto;
+                    margin: 0 auto;
+                }
+                button {
+                    position: fixed;
+                    right: 40px;
+                    top: 70px;
+                }
+            }
+        }
+    }
+    //側邊菜單
+    html {
+        body {
+            height: 100%;
+        }
+    }
+    #side-menu-switch {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+        &:checked + .side-menu {
+            transform: translateX(0);
+        }
+    }
+    .side-menu {
+        width: 300px;
+        height: 100%;
+        padding: 50px 0;
+        box-sizing: border-box;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        z-index: 100;
+        transform: translateX(-100%);
+        transition: 0.3s;
+        form {
+            display: flex;
+            margin: 0 10px 50px;
+            border-radius: 100px;
+            border: 1px solid #000;
+            input,
+            button {
+                border: none;
+                background-color: transparent;
+                padding: 5px 10px;
+                color: #000;
+                &:focus {
+                    outline: none;
+                }
+            }
+            input {
+                width: 230px;
+            }
+            button {
+                width: 50px;
+            }
+        }
+        nav {
+            ul {
+                .Label {
+                    display: none;
+                }
+            }
+            li {
+                #side-nav-control {
+                    z-index: 10;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                }
+                display: block;
+                padding: 10px;
+                color: chocolate;
+                text-decoration: none;
+                position: relative;
+                .fas {
+                    margin-right: -1.1em;
+                    transform: scale(0);
+                    transition: 0.3s;
+                }
+                &:hover {
+                    .fas {
+                        margin-right: 0em;
+                        transform: scale(1);
                     }
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 10px;
+                    right: 10px;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+/*********手機*****/
+@include small-phone-width
+ {
+    .side-bg-block {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+    //導覽列
+    .header {
+        padding: 0;
+        background-color: $Secondary-color01;
+        width: 100%;
+        .navbar-brand {
+            img {
+                width: 140px;
+                display: block;
+                margin: 10px auto 0 auto;
+            }
+        }
+        .navicon {
+            position: absolute;
+            top: 35px;
+            right: 15px;
+            font-size: 20px;
+            .side-menu-openBtn {
+                background: none;
+                border: none;
+                outline: none;
+                color: #fff;
+            }
+            .side-menu-closeBtn{
+                color: #fff;
+            }
+            .nav-icon {
+                color: #fff;
+                margin-right: 13px;
+            }
+            a {
+                margin-right: 10px;
+            }
+        }
+        .navbar {
+            display: none;
+            .navbar-expand-md {
+                .navbar-collapse {
+                    width: auto;
+                    margin: 0 auto;
+                }
+                button {
+                    position: fixed;
+                    right: 40px;
+                    top: 70px;
+                }
+            }
+        }
+    }
+    //側邊菜單
+    html {
+        body {
+            height: 100%;
+        }
+    }
+    #side-menu-switch {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+        &:checked + .side-menu {
+            transform: translateX(0);
+        }
+    }
+    .side-menu {
+        width: 300px;
+        height: 100%;
+        padding: 50px 0;
+        box-sizing: border-box;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        z-index: 100;
+        transform: translateX(-100%);
+        transition: 0.3s;
+        form {
+            display: flex;
+            margin: 0 10px 50px;
+            border-radius: 100px;
+            border: 1px solid #000;
+            input,
+            button {
+                border: none;
+                background-color: transparent;
+                padding: 5px 10px;
+                color: #000;
+                &:focus {
+                    outline: none;
+                }
+            }
+            input {
+                width: 230px;
+            }
+            button {
+                width: 50px;
+            }
+        }
+        nav {
+            ul {
+                .Label {
+                    display: none;
+                }
+            }
+            li {
+                #side-nav-control {
+                    z-index: 10;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                }
+                display: block;
+                padding: 10px;
+                color: chocolate;
+                text-decoration: none;
+                position: relative;
+                .fas {
+                    margin-right: -1.1em;
+                    transform: scale(0);
+                    transition: 0.3s;
+                }
+                &:hover {
+                    .fas {
+                        margin-right: 0em;
+                        transform: scale(1);
+                    }
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 10px;
+                    right: 10px;
+                    top: 0;
                 }
             }
         }

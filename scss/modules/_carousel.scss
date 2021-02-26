@@ -1,29 +1,109 @@
-
-.carousel {
-    .carousel-inner {
-        max-width: 938px;
-        max-height: 550px;
-        margin: 20px auto 0 auto;
-    }
-    .carousel-indicators{
-        position: absolute;
-        bottom: -30px;
-        right: 0;
+#carouselExampleIndicators {
+    max-width: 1080px;
+    margin: 3px auto 0 auto;
+    position: relative;
+}
+//大型電腦
+@include big-pc-width {
+    @include index-carousel;
+    #carouselExampleIndicators {
+        .carousel-indicators {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            bottom: 0px;
+            left: auto;
+            right: -200px;
+            li {
+                width: 18px;
+                height: 18px;
+                border-radius: 100%;
+            }
+        }
     }
 }
+//電腦
 @include pc-width {
-    @include index__carousel01;
-    @include index__carousel02;
+    @include index-carousel;
+    #carouselExampleIndicators {
+        .carousel-indicators {
+            display: flex;
+            position: absolute;
+            bottom: -45px;
+            li {
+                width: 18px;
+                height: 18px;
+                border-radius: 100%;
+                margin: 0 15px;
+            }
+        }
+    }
 }
+//小型電腦
+@include small-pc-width {
+    @include index-carousel;
+    #carouselExampleIndicators {
+        .carousel-indicators {
+            display: flex;
+            position: absolute;
+            bottom: -45px;
+            li {
+                width: 18px;
+                height: 18px;
+                border-radius: 100%;
+                margin: 0 15px;
+            }
+        }
+    }
+}
+//平板
 @include pad-width {
-    @include index__carousel01;
-    @include index__carousel02;
+    @include index-carousel;
+    #carouselExampleIndicators {
+        .carousel-indicators {
+            display: flex;
+            position: absolute;
+            bottom: -45px;
+            li {
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                margin: 0 15px;
+            }
+        }
+    }
 }
-@include small-pad-width {
-    @include index__carousel01;
-    @include index__carousel02;
-}
+//手機
 @include phone-width {
-    @include index__carousel01;
-    @include index__carousel02;
+    @include index-carousel;
+    #carouselExampleIndicators {
+        .carousel-indicators {
+            display: flex;
+            position: absolute;
+            bottom: -45px;
+            li {
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                margin: 0 15px;
+            }
+        }
+    }
+}
+//小型手機
+@include small-phone-width {
+    @include index-carousel;
+    #carouselExampleIndicators {
+        .carousel-indicators {
+            display: flex;
+            position: absolute;
+            bottom: -45px;
+            li {
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                margin: 0 15px;
+            }
+        }
+    }
 }

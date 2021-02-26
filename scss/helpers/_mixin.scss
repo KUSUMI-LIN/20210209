@@ -1,60 +1,73 @@
 //RWD
+//大型電腦
+@mixin big-pc-width() {
+      @media all and (min-width: $xxl-media) {
+            @content;
+      }
+}
 //電腦
 @mixin pc-width() {
-      @media all and (min-width: $pc-media) {
+      @media all and (min-width: $xl-min-media) and (max-width: $xl-media) {
+            @content;
+      }
+}
+//小型電腦
+@mixin small-pc-width() {
+      @media all and (min-width: $md-min-media) and (max-width: $md-media) {
             @content;
       }
 }
 //平板
 @mixin pad-width() {
-      @media all and (min-width: $pad-media) and (max-width: $pcs-media) {
-            @content;
-      }
-}
-//小平板
-@mixin small-pad-width() {
-      @media all and (min-width: $phone-media) and (max-width: $pads-media) {
+      @media all and (min-width: $sm-min-media) and (max-width: $sm-media) {
             @content;
       }
 }
 //手機
 @mixin phone-width() {
-      @media all and (max-width: $phones-media) {
+      @media all and (min-width: $xs-min-media) and (max-width: $xs-media) {
+            @content;
+      }
+}
+//小型手機
+@mixin small-phone-width() {
+      @media all and (max-width: $xxs-media) {
             @content;
       }
 }
 
 //首頁輪播圖樣式
-@mixin index__carousel01 {
-      .carousel-inner {
-            div {
-                  &:first-child {
-                        img {
-                              width: auto;
-                              max-height: 550px;
-                              background-attachment: fixed;
-                              background-size: cover;
-                              background-position: center center;
-                              display: block;
-                              margin: 0 auto;
+@mixin index-carousel {
+      #carouselimg {
+            #carouselExampleIndicators {
+                  .carousel-inner {
+                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                        .carousel-item {
+                              a {
+                                    img {
+                                          width: 100%;
+                                          height: auto;
+                                          background-attachment: fixed;
+                                          background-position: center;
+                                          background-size: cover;
+                                          vertical-align: bottom;
+                                    }
+                              }
                         }
                   }
             }
       }
 }
-@mixin index__carousel02 {
-      .carousel-inner {
-            div {
-                  &:last-child {
-                        img {
-                              width: auto;
-                              max-height: 550px;
-                              background-attachment: fixed;
-                              background-size: cover;
-                              background-position: center;
-                              display: block;
-                              margin: 0 auto;
-                        }
+
+//共同文字樣式
+@mixin alltext-decoration {
+      body {
+            color: #291821;
+            a {
+                  text-decoration: none;
+                  color: #291821;
+                  &:hover {
+                        color: $Secondary-color02;
                   }
             }
       }
