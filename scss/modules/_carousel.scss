@@ -1,19 +1,17 @@
-#carouselExampleIndicators {
-    max-width: 1080px;
-    margin: 3px auto 0 auto;
-    position: relative;
-}
 //大型電腦
 @include big-pc-width {
     @include index-carousel;
     #carouselExampleIndicators {
+        max-width: min-content;
+        margin: 0 auto;
+        position: relative;
         .carousel-indicators {
             display: flex;
             flex-direction: column;
             position: absolute;
             bottom: 0px;
             left: auto;
-            right: -200px;
+            right: -220px;
             li {
                 width: 18px;
                 height: 18px;
@@ -26,6 +24,9 @@
 @include pc-width {
     @include index-carousel;
     #carouselExampleIndicators {
+        max-width: min-content;
+        margin: 0 auto;
+        position: relative;
         .carousel-indicators {
             display: flex;
             position: absolute;
@@ -43,6 +44,9 @@
 @include small-pc-width {
     @include index-carousel;
     #carouselExampleIndicators {
+        max-width: min-content;
+        margin: 0 auto;
+        position: relative;
         .carousel-indicators {
             display: flex;
             position: absolute;
@@ -58,8 +62,11 @@
 }
 //平板
 @include pad-width {
-    @include index-carousel;
+    @include index-carousel-mob;
     #carouselExampleIndicators {
+        max-width: min-content;
+        margin: 0 auto;
+        position: relative;
         .carousel-indicators {
             display: flex;
             position: absolute;
@@ -75,7 +82,7 @@
 }
 //手機
 @include phone-width {
-    @include index-carousel;
+    @include index-carousel-mob;
     #carouselExampleIndicators {
         .carousel-indicators {
             display: flex;
@@ -92,7 +99,7 @@
 }
 //小型手機
 @include small-phone-width {
-    @include index-carousel;
+    @include index-carousel-mob;
     #carouselExampleIndicators {
         .carousel-indicators {
             display: flex;

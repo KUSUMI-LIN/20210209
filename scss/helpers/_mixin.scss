@@ -45,11 +45,30 @@
                         .carousel-item {
                               a {
                                     img {
-                                          width: 100%;
-                                          height: auto;
-                                          background-attachment: fixed;
+                                          height: 660px;
+                                          width: auto;
                                           background-position: center;
-                                          background-size: cover;
+                                          background-repeat: no-repeat;
+                                          vertical-align: bottom;
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+}
+@mixin index-carousel-mob {
+      #carouselimg {
+            #carouselExampleIndicators {
+                  .carousel-inner {
+                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                        .carousel-item {
+                              a {
+                                    img {
+                                          height: 960px;
+                                          width: auto;
+                                          background-position: center;
+                                          background-repeat: no-repeat;
                                           vertical-align: bottom;
                                     }
                               }

@@ -1,8 +1,4 @@
 @charset "UTF-8";
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,7 +49,7 @@ table {
   border-spacing: 0;
 }
 
-html body {
+html, body {
   height: 100%;
 }
 
@@ -575,14 +571,14 @@ html body {
     width: 100%;
   }
   .header .navbar-brand img {
-    width: 140px;
+    width: 25%;
     display: block;
     margin: 10px auto 0 auto;
   }
   .header .navicon {
     position: absolute;
-    top: 35px;
-    right: 15px;
+    top: 25%;
+    right: 10px;
     font-size: 20px;
   }
   .header .navicon .side-menu-openBtn {
@@ -594,12 +590,9 @@ html body {
   .header .navicon .side-menu-closeBtn {
     color: #fff;
   }
-  .header .navicon .nav-icon {
+  .header .navicon .nav-icon, .header .navicon .side-menu-openBtn {
     color: #fff;
-    margin-right: 13px;
-  }
-  .header .navicon a {
-    margin-right: 10px;
+    margin-left: 1.2rem;
   }
   .header .navbar {
     display: none;
@@ -712,7 +705,7 @@ html body {
 }
 
 footer .footer-grids {
-  margin: 30px auto 0 auto;
+  margin: 50px auto;
 }
 
 footer .footer-grids .footericon {
@@ -775,24 +768,24 @@ body a:hover {
           filter: brightness(50%);
 }
 
-#carouselExampleIndicators {
-  max-width: 1080px;
-  margin: 3px auto 0 auto;
-  position: relative;
-}
-
 @media all and (min-width: 1200px) {
   #carouselimg #carouselExampleIndicators .carousel-inner {
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   #carouselimg #carouselExampleIndicators .carousel-inner .carousel-item a img {
-    width: 100%;
-    height: auto;
-    background-attachment: fixed;
+    height: 660px;
+    width: auto;
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
     vertical-align: bottom;
+  }
+  #carouselExampleIndicators {
+    max-width: -webkit-min-content;
+    max-width: -moz-min-content;
+    max-width: min-content;
+    margin: 0 auto;
+    position: relative;
   }
   #carouselExampleIndicators .carousel-indicators {
     display: -webkit-box;
@@ -805,7 +798,7 @@ body a:hover {
     position: absolute;
     bottom: 0px;
     left: auto;
-    right: -200px;
+    right: -220px;
   }
   #carouselExampleIndicators .carousel-indicators li {
     width: 18px;
@@ -820,12 +813,18 @@ body a:hover {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   #carouselimg #carouselExampleIndicators .carousel-inner .carousel-item a img {
-    width: 100%;
-    height: auto;
-    background-attachment: fixed;
+    height: 660px;
+    width: auto;
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
     vertical-align: bottom;
+  }
+  #carouselExampleIndicators {
+    max-width: -webkit-min-content;
+    max-width: -moz-min-content;
+    max-width: min-content;
+    margin: 0 auto;
+    position: relative;
   }
   #carouselExampleIndicators .carousel-indicators {
     display: -webkit-box;
@@ -848,12 +847,18 @@ body a:hover {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   #carouselimg #carouselExampleIndicators .carousel-inner .carousel-item a img {
-    width: 100%;
-    height: auto;
-    background-attachment: fixed;
+    height: 660px;
+    width: auto;
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
     vertical-align: bottom;
+  }
+  #carouselExampleIndicators {
+    max-width: -webkit-min-content;
+    max-width: -moz-min-content;
+    max-width: min-content;
+    margin: 0 auto;
+    position: relative;
   }
   #carouselExampleIndicators .carousel-indicators {
     display: -webkit-box;
@@ -876,12 +881,18 @@ body a:hover {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   #carouselimg #carouselExampleIndicators .carousel-inner .carousel-item a img {
-    width: 100%;
-    height: auto;
-    background-attachment: fixed;
+    height: 960px;
+    width: auto;
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
     vertical-align: bottom;
+  }
+  #carouselExampleIndicators {
+    max-width: -webkit-min-content;
+    max-width: -moz-min-content;
+    max-width: min-content;
+    margin: 0 auto;
+    position: relative;
   }
   #carouselExampleIndicators .carousel-indicators {
     display: -webkit-box;
@@ -904,11 +915,10 @@ body a:hover {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   #carouselimg #carouselExampleIndicators .carousel-inner .carousel-item a img {
-    width: 100%;
-    height: auto;
-    background-attachment: fixed;
+    height: 960px;
+    width: auto;
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
     vertical-align: bottom;
   }
   #carouselExampleIndicators .carousel-indicators {
@@ -932,11 +942,10 @@ body a:hover {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   #carouselimg #carouselExampleIndicators .carousel-inner .carousel-item a img {
-    width: 100%;
-    height: auto;
-    background-attachment: fixed;
+    height: 960px;
+    width: auto;
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
     vertical-align: bottom;
   }
   #carouselExampleIndicators .carousel-indicators {

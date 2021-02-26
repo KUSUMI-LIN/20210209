@@ -1,7 +1,5 @@
-html {
-    body {
+html,body{ 
         height: 100%;
-    }
 }
 /*********大型電腦*****/
 @include big-pc-width {
@@ -524,15 +522,15 @@ html {
         width: 100%;
         .navbar-brand {
             img {
-                width: 140px;
+                width: 25%;
                 display: block;
                 margin: 10px auto 0 auto;
             }
         }
         .navicon {
             position: absolute;
-            top: 35px;
-            right: 15px;
+            top: 25%;
+            right: 10px;
             font-size: 20px;
             .side-menu-openBtn {
                 background: none;
@@ -543,12 +541,11 @@ html {
             .side-menu-closeBtn{
                 color: #fff;
             }
-            .nav-icon {
+            .nav-icon,.side-menu-openBtn{
                 color: #fff;
-                margin-right: 13px;
-            }
-            a {
-                margin-right: 10px;
+                
+                    margin-left: 1.2rem;
+                
             }
         }
         .navbar {
