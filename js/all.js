@@ -1,4 +1,5 @@
 $('document').ready(function () {
+   
     //側邊菜單
     $('#side-nav-control').click(function () {
         $('.Label').toggle()
@@ -8,12 +9,10 @@ $('document').ready(function () {
         
     });
     //導覽列搜尋動畫
-    $('.bi-search').mouseover(function () {
+    $('.bi-search').click(function () {
         $('#nav-search').show(300);
     });
-    $('main').click(function () {
-        $('#nav-search').hide(300);
-    });
+   
 });
 
 /*隱藏

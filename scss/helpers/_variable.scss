@@ -1,13 +1,19 @@
 //先針對media queries的width設為變數
+//大型電腦
 $xxl-media: 1200px;
+//電腦
 $xl-media: 1199px;
 $xl-min-media: 992px;
+//小型電腦
 $md-media: 991px;
 $md-min-media: 768px;
+//平板
 $sm-media: 767px;
 $sm-min-media: 576px;
+//手機
 $xs-media: 575px;
 $xs-min-media: 480px;
+//小型手機
 $xxs-media: 479px;
 
 //色碼

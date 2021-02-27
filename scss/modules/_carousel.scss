@@ -2,20 +2,31 @@
 @include big-pc-width {
     @include index-carousel;
     #carouselExampleIndicators {
-        max-width: min-content;
-        margin: 0 auto;
-        position: relative;
+        .carousel-inner{
+            .carousel-item {
+                a {
+                      img {
+                            max-width: 80vw;
+                            height: auto;
+                            margin: 1% auto;
+                      }
+                }
+        }       
+      }
         .carousel-indicators {
             display: flex;
             flex-direction: column;
             position: absolute;
-            bottom: 0px;
+            bottom: 35%;
+            top: auto;
             left: auto;
-            right: -220px;
+            right: 6%;
+            margin: 0;
             li {
-                width: 18px;
-                height: 18px;
+                width: 1rem;
+                height: 1rem;
                 border-radius: 100%;
+                margin: 10px 0;
             }
         }
     }
@@ -24,92 +35,143 @@
 @include pc-width {
     @include index-carousel;
     #carouselExampleIndicators {
-        max-width: min-content;
-        margin: 0 auto;
-        position: relative;
-        .carousel-indicators {
-            display: flex;
-            position: absolute;
-            bottom: -45px;
-            li {
-                width: 18px;
-                height: 18px;
-                border-radius: 100%;
-                margin: 0 15px;
-            }
+        .carousel-inner{
+            .carousel-item {
+                a {
+                      img {
+                            max-width: 80vw;
+                            height: auto;
+                            margin: 1% auto;
+                      }
+                }
+        }       
+      }
+      .carousel-indicators {
+        position: absolute;
+        bottom: -4%;
+        right: 0;
+        margin: 0;
+        li {
+            width: 0.8rem;
+            height: 0.8rem;
+            border-radius: 100%;
+            margin: 0 15px
         }
+    }
     }
 }
 //小型電腦
 @include small-pc-width {
     @include index-carousel;
     #carouselExampleIndicators {
-        max-width: min-content;
-        margin: 0 auto;
-        position: relative;
+        .carousel-inner{
+            .carousel-item {
+                a {
+                      img {
+                            max-width: 100%;
+                            height: auto;
+                            margin: 0 auto;
+                      }
+                }
+        }       
+      }
         .carousel-indicators {
-            display: flex;
             position: absolute;
-            bottom: -45px;
+            bottom: -40px;
+            right: 0;
+            margin: 0;
             li {
-                width: 18px;
-                height: 18px;
+                width: 0.8rem;
+                height: 0.8rem;
                 border-radius: 100%;
-                margin: 0 15px;
+                margin: 0 15px
             }
         }
     }
 }
 //平板
 @include pad-width {
-    @include index-carousel-mob;
+    @include index-carousel;
     #carouselExampleIndicators {
-        max-width: min-content;
-        margin: 0 auto;
-        position: relative;
+        .carousel-inner{
+            .carousel-item {
+                a {
+                      img {
+                            max-width: 100%;
+                            height: auto;
+                            margin: 0 auto;
+                      }
+                }
+        }       
+      }
         .carousel-indicators {
-            display: flex;
             position: absolute;
-            bottom: -45px;
+            bottom: -40px;
+            right: 0;
+            margin: 0;
             li {
-                width: 15px;
-                height: 15px;
+                width: 0.8rem;
+                height: 0.8rem;
                 border-radius: 100%;
-                margin: 0 15px;
+                margin: 0 10px
             }
         }
     }
 }
 //手機
 @include phone-width {
-    @include index-carousel-mob;
+    @include index-carousel;
     #carouselExampleIndicators {
+        .carousel-inner{
+            .carousel-item {
+                a {
+                      img {
+                            max-width: 100%;
+                            height: auto;
+                            margin: 0 auto;
+                      }
+                }
+        }       
+      }
         .carousel-indicators {
-            display: flex;
             position: absolute;
-            bottom: -45px;
+            bottom: -9%;
+            right: 0;
+            margin: 0;
             li {
-                width: 15px;
-                height: 15px;
+                width: 0.8rem;
+                height: 0.8rem;
                 border-radius: 100%;
-                margin: 0 15px;
+                margin: 0 10px
             }
         }
     }
 }
 //小型手機
 @include small-phone-width {
-    @include index-carousel-mob;
+    @include index-carousel;
     #carouselExampleIndicators {
+        .carousel-inner{
+            .carousel-item {
+                a {
+                      img {
+                            max-width: 100%;
+                            height: auto;
+                            margin: 0 auto;
+                      }
+                }
+        }       
+      }
         .carousel-indicators {
-            display: flex;
             position: absolute;
-            bottom: -45px;
+            bottom: -9%;
+            right: 0;
+            margin: 0;
             li {
-                width: 15px;
-                height: 15px;
+                width: 0.8rem;
+                height: 0.8rem;
                 border-radius: 100%;
-                margin: 0 15px;
+                margin: 0 10px
             }
         }
     }

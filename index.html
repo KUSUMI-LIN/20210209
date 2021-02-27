@@ -4,7 +4,7 @@
 <head>
     <title>巧克蕾特</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
     <!-- CSS only -->
     <link href="https://yarn.pm/normalize.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -21,8 +21,8 @@
 
 <body>
     <!--側邊選單-->
-    <input type="checkbox" name="" id="side-menu-switch">
-    <div class="side-menu" id="side-menu">
+    <input type="checkbox" name="" id="side-menu-switch" class="d-block d-md-none">
+    <div class="side-menu d-block d-md-none" id="side-menu">
         <form>
             <input type="search" placeholder="請輸入關鍵字">
             <button><i class="bi bi-search" style="color: #000; font-size: 20px; margin-right: 15px;"></i></button>
@@ -35,19 +35,25 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">關於巧克蕾特</a>
                 </li>
-                <li class="nav-item dropdown" data-bs-filp="false">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">產品介紹</a>
-                    <a class="nav-link dropdown-toggle" href="#" id="side-nav-control" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                    </a>
-                    <ul class="Label">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                      </p>
+                      <div class="collapse" id="collapseExample">
+                        <div class="card">
+                            <ul class="list-group list-group-flush">
+                                <li><a class="dropdown-item" href="#">經典巧克力</a></li>
+                                <li><a class="dropdown-item" href="#">辣巧克力</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">經典禮盒</a></li>
+                            </ul>
+                          </div>
+                      </div>
+                    
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">最新消息</a>
@@ -62,18 +68,21 @@
         </nav>
     </div>
     <!--手機-->
-    <div class="side-bg-block">
-
-    </div>
+    <div class="side-bg-block"></div>
     <!--導覽列-->
     <div class="header sticky-top">
         <div class="navicon">
-            <form class="d-none d-md-inline"><input id="nav-search" type="search" placeholder="Search..."><a href="#"><i
-                        class="nav-icon bi bi-search"></i></a></input></form>
+            <form class="d-none d-md-inline">
+                <input id="nav-search" type="search" placeholder="Search...">
+                <a href="#">
+                    <i class="nav-icon bi bi-search"></i>
+                </a>
+                </input>
+            </form>
             <a href="#"><i class="nav-icon bi bi-person"></i></a>
             <a href="#"><i class="nav-icon bi bi-cart"></i></a>
             <label for="side-menu-switch">
-                <i class="fas fa-bars side-menu-openBtn" data-bs-target="#side-menu-switch"
+                <i class="nav-icon fas fa-bars side-menu-openBtn d-block d-md-none" data-bs-target="#side-menu-switch"
                     aria-controls="side-menu-switch" aria-expanded="false" aria-label="Toggle navigation"></i>
             </label>
         </div>
@@ -93,13 +102,13 @@
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 產品介紹
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                                <li><a class="dropdown-item" href="#">經典巧克力</a></li>
+                                <li><a class="dropdown-item" href="#">辣巧克力</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">經典禮盒</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -130,26 +139,26 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <a>
-                        <img src="images/index/01.jpg" class="d-md-block d-none" alt="...">
-                        <img src="images/index/01m.jpg" class="d-md-none d-block w-auto" alt="...">
+                        <img src="images/index/01.jpg" class="d-sm-block d-none" alt="...">
+                        <img src="images/index/01m.jpg" class="d-sm-none d-block w-auto" alt="...">
                     </a>
                 </div>
                 <div class="carousel-item">
                     <a>
-                        <img src="images/index/02.jpg" class="d-md-block d-none" alt="...">
-                        <img src="images/index/02m.jpg" class="d-md-none d-block w-auto" alt="...">
+                        <img src="images/index/02.jpg" class="d-sm-block d-none" alt="...">
+                        <img src="images/index/02m.jpg" class="d-sm-none d-block w-auto" alt="...">
                     </a>
                 </div>
                 <div class="carousel-item">
                     <a>
-                        <img src="images/index/03.jpg" class="d-md-block d-none" alt="...">
-                        <img src="images/index/03m.jpg" class="d-md-none d-block w-auto" alt="...">
+                        <img src="images/index/03.jpg" class="d-sm-block d-none" alt="...">
+                        <img src="images/index/03m.jpg" class="d-sm-none d-block w-auto" alt="...">
                     </a>
                 </div>
                 <div class="carousel-item">
                     <a>
-                        <img src="images/index/04.jpg" class="d-md-block d-none" alt="...">
-                        <img src="images/index/04m.jpg" class="d-md-none d-block w-auto" alt="...">
+                        <img src="images/index/04.jpg" class="d-sm-block d-none" alt="...">
+                        <img src="images/index/04m.jpg" class="d-sm-none d-block w-auto" alt="...">
                     </a>
                 </div>
             </div>

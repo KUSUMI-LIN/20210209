@@ -1,36 +1,33 @@
-html,body{ 
-        height: 100%;
+//共同
+html,
+body,
+main {
+    height: 100%;
+}
+.header {
+    padding: 0;
+    background-color: $Secondary-color01;
+    width: 100%;
 }
 /*********大型電腦*****/
 @include big-pc-width {
-    .side-menu {
-        display: none;
-    }
-    #side-menu-switch {
-        display: none;
-    }
     .header {
-        padding: 0;
-        background-color: $Secondary-color01;
-        width: 100%;
         .navbar-brand {
             img {
                 width: 8%;
                 display: block;
-                margin: 5px auto 0 auto;
+                margin: 0.5rem auto 0 auto;
             }
         }
         .navicon {
             position: absolute;
-            top: 5px;
-            right: 25px;
-            .side-menu-openBtn {
-                display: none;
-            }
+            top: 1rem;
+            left: auto;
+            right: 3%;
             .nav-icon {
                 color: #fff;
-                font-size: 18px;
-                margin-right: 15px;
+                font-size: 1rem;
+                margin: 1rem;
             }
             form {
                 display: inline-block;
@@ -43,23 +40,25 @@ html,body{
                     outline: none;
                     width: 120px;
                     background: none;
-                    margin-right: 10px;
+                  
                     &:focus {
                         color: #fff;
                     }
                 }
             }
-            a {
-                margin-right: 10px;
-            }
         }
         .navbar-expand-md {
             padding-top: 0;
-            .navbar-collapse {
-                width: auto;
-                margin: 0 auto;
-                .navbar-nav > li {
-                    margin: 0 10px;
+            .container-fluid {
+                .navbar-collapse {
+                    width: auto;
+                    margin: 0 auto;
+                    .navbar-nav > li {
+                        margin: 0 10px;
+                        a {
+                            font-size: 14px;
+                        }
+                    }
                 }
             }
         }
@@ -68,34 +67,23 @@ html,body{
 
 /*********電腦*****/
 @include pc-width {
-    .side-menu {
-        display: none;
-    }
-    #side-menu-switch {
-        display: none;
-    }
     .header {
-        padding: 0;
-        background-color: $Secondary-color01;
-        width: 100%;
         .navbar-brand {
             img {
-                width: 10%;
+                width: 8%;
                 display: block;
-                margin: 5px auto 0 auto;
+                margin: 0.5rem auto 0 auto;
             }
         }
         .navicon {
-            position: fixed;
-            top: 5px;
-            right: 25px;
-            .side-menu-openBtn {
-                display: none;
-            }
+            position: absolute;
+            top: 1rem;
+            left: auto;
+            right: 3%;
             .nav-icon {
                 color: #fff;
-                font-size: 18px;
-                margin-right: 15px;
+                font-size: 0.8rem;
+                margin: 0.8rem;
             }
             form {
                 display: inline-block;
@@ -108,23 +96,25 @@ html,body{
                     outline: none;
                     width: 120px;
                     background: none;
-                    margin-right: 10px;
+                  
                     &:focus {
                         color: #fff;
                     }
                 }
             }
-            a {
-                margin-right: 10px;
-            }
         }
         .navbar-expand-md {
             padding-top: 0;
-            .navbar-collapse {
-                width: auto;
-                margin: 0 auto;
-                .navbar-nav > li {
-                    margin: 0 10px;
+            .container-fluid {
+                .navbar-collapse {
+                    width: auto;
+                    margin: 0 auto;
+                    .navbar-nav > li {
+                        margin: 0 10px;
+                        a {
+                            font-size: 14px;
+                        }
+                    }
                 }
             }
         }
@@ -132,34 +122,23 @@ html,body{
 }
 /*********小型電腦*****/
 @include small-pc-width {
-    .side-menu {
-        display: none;
-    }
-    #side-menu-switch {
-        display: none;
-    }
     .header {
-        padding: 0;
-        background-color: $Secondary-color01;
-        width: 100%;
         .navbar-brand {
             img {
-                width: 120px;
+                width: 10%;
                 display: block;
-                margin: 5px auto 0 auto;
+                margin: 1rem auto 0 auto;
             }
         }
         .navicon {
-            position: fixed;
-            top: 15px;
-            right: 25px;
-            .side-menu-openBtn {
-                display: none;
-            }
+            position: absolute;
+            top: 1rem;
+            left: auto;
+            right: 3%;
             .nav-icon {
                 color: #fff;
-                font-size: 18px;
-                margin-right: 15px;
+                font-size: 1rem;
+                margin: 0.8rem;
             }
             form {
                 display: inline-block;
@@ -172,23 +151,25 @@ html,body{
                     outline: none;
                     width: 120px;
                     background: none;
-                    margin-right: 10px;
+                  
                     &:focus {
                         color: #fff;
                     }
                 }
             }
-            a {
-                margin-right: 10px;
-            }
         }
         .navbar-expand-md {
             padding-top: 0;
-            .navbar-collapse {
-                width: auto;
-                margin: 0 auto;
-                .navbar-nav > li {
-                    margin: 0 10px;
+            .container-fluid {
+                .navbar-collapse {
+                    width: auto;
+                    margin: 0 auto;
+                    .navbar-nav > li {
+                        margin: 0 10px;
+                        a {
+                            font-size: 16px;
+                        }
+                    }
                 }
             }
         }
@@ -200,7 +181,7 @@ html,body{
         display: none;
         width: 100%;
         height: 100%;
-        background-color: rgba($color: #000000, $alpha: 0.5);
+        background-color: rgba($color: #000000, $alpha: 0.6);
         content: "";
         position: fixed;
         top: 0;
@@ -209,320 +190,9 @@ html,body{
     }
     //導覽列
     .header {
-        padding: 0;
-        background-color: $Secondary-color01;
-        width: 100%;
         .navbar-brand {
             img {
                 width: 140px;
-                display: block;
-                margin: 10px auto 0 auto;
-            }
-        }
-        .navicon {
-            position: absolute;
-            top: 35px;
-            right: 35px;
-            font-size: 25px;
-            .side-menu-openBtn {
-                background: none;
-                border: none;
-                outline: none;
-                color: #fff;
-            }
-            .side-menu-closeBtn{
-                color: #fff;
-            }
-            .nav-icon {
-                color: #fff;
-                margin-right: 20px;
-            }
-            a {
-                margin-right: 10px;
-            }
-        }
-        .navbar {
-            display: none;
-            .navbar-expand-md {
-                .navbar-collapse {
-                    width: auto;
-                    margin: 0 auto;
-                }
-                button {
-                    position: fixed;
-                    right: 40px;
-                    top: 70px;
-                }
-            }
-        }
-    }
-    //側邊菜單
-    html {
-        body {
-            height: 100%;
-        }
-    }
-    #side-menu-switch {
-        position: absolute;
-        opacity: 0;
-        z-index: -1;
-        &:checked + .side-menu {
-            transform: translateX(0);
-        }
-    }
-    .side-menu {
-        width: 300px;
-        height: 100%;
-        padding: 50px 0;
-        box-sizing: border-box;
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        float: left;
-        position: fixed;
-        top: 80px;
-        left: 0;
-        z-index: 100;
-        transform: translateX(-100%);
-        transition: 0.3s;
-        form {
-            display: flex;
-            margin: 0 10px 50px;
-            border-radius: 100px;
-            border: 1px solid #000;
-            input,
-            button {
-                border: none;
-                background-color: transparent;
-                padding: 5px 10px;
-                color: #000;
-                &:focus {
-                    outline: none;
-                }
-            }
-            input {
-                width: 230px;
-            }
-            button {
-                width: 50px;
-            }
-        }
-        nav {
-            ul {
-                .Label {
-                    display: none;
-                }
-            }
-            li {
-                #side-nav-control {
-                    z-index: 10;
-                    position: absolute;
-                    top: 10px;
-                    right: 10px;
-                }
-                display: block;
-                padding: 10px;
-                color: chocolate;
-                text-decoration: none;
-                position: relative;
-                .fas {
-                    margin-right: -1.1em;
-                    transform: scale(0);
-                    transition: 0.3s;
-                }
-                &:hover {
-                    .fas {
-                        margin-right: 0em;
-                        transform: scale(1);
-                    }
-                }
-                &::before {
-                    content: "";
-                    position: absolute;
-                    left: 10px;
-                    right: 10px;
-                    top: 0;
-                }
-            }
-        }
-    }
-}
-/*********小平版*****/
-@include phone-width 
-{
-    .side-bg-block {
-        display: none;
-        width: 100%;
-        height: 100%;
-        background-color: rgba($color: #000000, $alpha: 0.5);
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 5;
-    }
-    //導覽列
-    .header {
-        padding: 0;
-        background-color: $Secondary-color01;
-        width: 100%;
-        .navbar-brand {
-            img {
-                width: 140px;
-                display: block;
-                margin: 10px auto 0 auto;
-            }
-        }
-        .navicon {
-            position: absolute;
-            top: 35px;
-            right: 18px;
-            font-size: 20px;
-            .side-menu-openBtn {
-                background: none;
-                border: none;
-                outline: none;
-                color: #fff;
-            }
-            .side-menu-closeBtn{
-                color: #fff;
-            }
-            .nav-icon {
-                color: #fff;
-                margin-right: 20px;
-            }
-            a {
-                margin-right: 10px;
-            }
-        }
-        .navbar {
-            display: none;
-            .navbar-expand-md {
-                .navbar-collapse {
-                    width: auto;
-                    margin: 0 auto;
-                }
-                button {
-                    position: fixed;
-                    right: 40px;
-                    top: 70px;
-                }
-            }
-        }
-    }
-    //側邊菜單
-    html {
-        body {
-            height: 100%;
-        }
-    }
-    #side-menu-switch {
-        position: absolute;
-        opacity: 0;
-        z-index: -1;
-        &:checked + .side-menu {
-            transform: translateX(0);
-        }
-    }
-    .side-menu {
-        width: 300px;
-        height: 100%;
-        padding: 50px 0;
-        box-sizing: border-box;
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        float: left;
-        position: fixed;
-        top: 80px;
-        left: 0;
-        z-index: 100;
-        transform: translateX(-100%);
-        transition: 0.3s;
-        form {
-            display: flex;
-            margin: 0 10px 50px;
-            border-radius: 100px;
-            border: 1px solid #000;
-            input,
-            button {
-                border: none;
-                background-color: transparent;
-                padding: 5px 10px;
-                color: #000;
-                &:focus {
-                    outline: none;
-                }
-            }
-            input {
-                width: 230px;
-            }
-            button {
-                width: 50px;
-            }
-        }
-        nav {
-            ul {
-                .Label {
-                    display: none;
-                }
-            }
-            li {
-                #side-nav-control {
-                    z-index: 10;
-                    position: absolute;
-                    top: 10px;
-                    right: 10px;
-                }
-                display: block;
-                padding: 10px;
-                color: chocolate;
-                text-decoration: none;
-                position: relative;
-                .fas {
-                    margin-right: -1.1em;
-                    transform: scale(0);
-                    transition: 0.3s;
-                }
-                &:hover {
-                    .fas {
-                        margin-right: 0em;
-                        transform: scale(1);
-                    }
-                }
-                &::before {
-                    content: "";
-                    position: absolute;
-                    left: 10px;
-                    right: 10px;
-                    top: 0;
-                }
-            }
-        }
-    }
-}
-/*********手機*****/
-@include small-phone-width
- {
-    .side-bg-block {
-        display: none;
-        width: 100%;
-        height: 100%;
-        background-color: rgba($color: #000000, $alpha: 0.5);
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 5;
-    }
-    //導覽列
-    .header {
-        padding: 0;
-        background-color: $Secondary-color01;
-        width: 100%;
-        .navbar-brand {
-            img {
-                width: 25%;
                 display: block;
                 margin: 10px auto 0 auto;
             }
@@ -530,22 +200,16 @@ html,body{
         .navicon {
             position: absolute;
             top: 25%;
-            right: 10px;
-            font-size: 20px;
+            right: 3%;
             .side-menu-openBtn {
                 background: none;
                 border: none;
                 outline: none;
-                color: #fff;
             }
-            .side-menu-closeBtn{
+            .nav-icon {
                 color: #fff;
-            }
-            .nav-icon,.side-menu-openBtn{
-                color: #fff;
-                
-                    margin-left: 1.2rem;
-                
+                font-size: 1.2rem;
+                margin: 1rem;
             }
         }
         .navbar {
@@ -564,11 +228,6 @@ html,body{
         }
     }
     //側邊菜單
-    html {
-        body {
-            height: 100%;
-        }
-    }
     #side-menu-switch {
         position: absolute;
         opacity: 0;
@@ -587,7 +246,7 @@ html,body{
         flex-direction: column;
         float: left;
         position: fixed;
-        top: 80px;
+        top: 70px;
         left: 0;
         z-index: 100;
         transform: translateX(-100%);
@@ -616,39 +275,250 @@ html,body{
         }
         nav {
             ul {
-                .Label {
-                    display: none;
-                }
-            }
-            li {
-                #side-nav-control {
-                    z-index: 10;
-                    position: absolute;
-                    top: 10px;
-                    right: 10px;
-                }
-                display: block;
-                padding: 10px;
-                color: chocolate;
-                text-decoration: none;
-                position: relative;
-                .fas {
-                    margin-right: -1.1em;
-                    transform: scale(0);
-                    transition: 0.3s;
-                }
-                &:hover {
-                    .fas {
-                        margin-right: 0em;
-                        transform: scale(1);
+                li {
+                    display: block;
+                    padding: 10px;
+                    color: chocolate;
+                    text-decoration: none;
+                    position: relative;
+                    button {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
                     }
                 }
-                &::before {
-                    content: "";
-                    position: absolute;
-                    left: 10px;
-                    right: 10px;
-                    top: 0;
+            }
+        }
+    }
+}
+/*********手機*****/
+@include phone-width {
+    .side-bg-block {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+    //導覽列
+    .header {
+        .navbar-brand {
+            img {
+                width: 100px;
+                display: block;
+                margin: 10px auto 0 auto;
+            }
+        }
+        .navicon {
+            position: absolute;
+            top: 18%;
+            right: 3%;
+            .side-menu-openBtn {
+                background: none;
+                border: none;
+                outline: none;
+            }
+            .nav-icon {
+                color: #fff;
+                font-size: 1.2rem;
+                margin: 0.8rem;
+            }
+        }
+        .navbar {
+            display: none;
+            .navbar-expand-md {
+                .navbar-collapse {
+                    width: auto;
+                    margin: 0 auto;
+                }
+                button {
+                    position: fixed;
+                    right: 40px;
+                    top: 70px;
+                }
+            }
+        }
+    }
+    //側邊菜單
+    #side-menu-switch {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+        &:checked + .side-menu {
+            transform: translateX(0);
+        }
+    }
+    .side-menu {
+        width: 300px;
+        height: 100%;
+        padding: 50px 0;
+        box-sizing: border-box;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        z-index: 100;
+        transform: translateX(-100%);
+        transition: 0.3s;
+        form {
+            display: flex;
+            margin: 0 10px 50px;
+            border-radius: 100px;
+            border: 1px solid #000;
+            input,
+            button {
+                border: none;
+                background-color: transparent;
+                padding: 5px 10px;
+                color: #000;
+                &:focus {
+                    outline: none;
+                }
+            }
+            input {
+                width: 230px;
+            }
+            button {
+                width: 50px;
+            }
+        }
+        nav {
+            ul {
+                li {
+                    display: block;
+                    padding: 10px;
+                    color: chocolate;
+                    text-decoration: none;
+                    position: relative;
+                    button {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+/*********小型手機*****/
+@include small-phone-width {
+    .side-bg-block {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+    //導覽列
+    .header {
+        .navbar-brand {
+            img {
+                width: 100px;
+                display: block;
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+        }
+        .navicon {
+            position: absolute;
+            top: 18%;
+            right: 3%;
+            .side-menu-openBtn {
+                background: none;
+                border: none;
+                outline: none;
+            }
+            .nav-icon {
+                color: #fff;
+                font-size: 1.2rem;
+                margin: 0.8rem;
+            }
+        }
+        .navbar {
+            display: none;
+            .navbar-expand-md {
+                .navbar-collapse {
+                    width: auto;
+                    margin: 0 auto;
+                }
+                button {
+                    position: fixed;
+                    right: 40px;
+                    top: 70px;
+                }
+            }
+        }
+    }
+    //側邊菜單
+    #side-menu-switch {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+        &:checked + .side-menu {
+            transform: translateX(0);
+        }
+    }
+    .side-menu {
+        width: 300px;
+        height: 100%;
+        padding: 50px 0;
+        box-sizing: border-box;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        z-index: 100;
+        transform: translateX(-100%);
+        transition: 0.3s;
+        form {
+            display: flex;
+            margin: 0 10px 50px;
+            border-radius: 100px;
+            border: 1px solid #000;
+            input,
+            button {
+                border: none;
+                background-color: transparent;
+                padding: 5px 10px;
+                color: #000;
+                &:focus {
+                    outline: none;
+                }
+            }
+            input {
+                width: 230px;
+            }
+            button {
+                width: 50px;
+            }
+        }
+        nav {
+            ul {
+                li {
+                    display: block;
+                    padding: 10px;
+                    color: chocolate;
+                    text-decoration: none;
+                    position: relative;
+                    button {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
                 }
             }
         }
