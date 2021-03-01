@@ -2,17 +2,17 @@
 @include big-pc-width {
     @include index-carousel;
     #carouselExampleIndicators {
-        .carousel-inner{
+        .carousel-inner {
             .carousel-item {
                 a {
-                      img {
-                            max-width: 80vw;
-                            height: auto;
-                            margin: 1% auto;
-                      }
+                    img {
+                        max-width: 80vw;
+                        height: auto;
+                        margin: 1% auto;
+                    }
                 }
-        }       
-      }
+            }
+        }
         .carousel-indicators {
             display: flex;
             flex-direction: column;
@@ -35,46 +35,50 @@
 @include pc-width {
     @include index-carousel;
     #carouselExampleIndicators {
-        .carousel-inner{
+        .carousel-inner {
             .carousel-item {
                 a {
-                      img {
-                            max-width: 80vw;
-                            height: auto;
-                            margin: 1% auto;
-                      }
+                    img {
+                        max-width: 80vw;
+                        height: auto;
+                        margin: 1% auto;
+                    }
                 }
-        }       
-      }
-      .carousel-indicators {
-        position: absolute;
-        bottom: -4%;
-        right: 0;
-        margin: 0;
-        li {
-            width: 0.8rem;
-            height: 0.8rem;
-            border-radius: 100%;
-            margin: 0 15px
+            }
         }
-    }
+        .carousel-indicators {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            bottom: 35%;
+            top: auto;
+            left: auto;
+            right: 6%;
+            margin: 0;
+            li {
+                width: 1rem;
+                height: 1rem;
+                border-radius: 100%;
+                margin: 10px 0;
+            }
+        }
     }
 }
 //小型電腦
 @include small-pc-width {
     @include index-carousel;
     #carouselExampleIndicators {
-        .carousel-inner{
+        .carousel-inner {
             .carousel-item {
                 a {
-                      img {
-                            max-width: 100%;
-                            height: auto;
-                            margin: 0 auto;
-                      }
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        margin: 0 auto;
+                    }
                 }
-        }       
-      }
+            }
+        }
         .carousel-indicators {
             position: absolute;
             bottom: -40px;
@@ -84,7 +88,7 @@
                 width: 0.8rem;
                 height: 0.8rem;
                 border-radius: 100%;
-                margin: 0 15px
+                margin: 0 15px;
             }
         }
     }
@@ -93,17 +97,17 @@
 @include pad-width {
     @include index-carousel;
     #carouselExampleIndicators {
-        .carousel-inner{
+        .carousel-inner {
             .carousel-item {
                 a {
-                      img {
-                            max-width: 100%;
-                            height: auto;
-                            margin: 0 auto;
-                      }
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        margin: 0 auto;
+                    }
                 }
-        }       
-      }
+            }
+        }
         .carousel-indicators {
             position: absolute;
             bottom: -40px;
@@ -113,7 +117,7 @@
                 width: 0.8rem;
                 height: 0.8rem;
                 border-radius: 100%;
-                margin: 0 10px
+                margin: 0 10px;
             }
         }
     }
@@ -122,17 +126,17 @@
 @include phone-width {
     @include index-carousel;
     #carouselExampleIndicators {
-        .carousel-inner{
+        .carousel-inner {
             .carousel-item {
                 a {
-                      img {
-                            max-width: 100%;
-                            height: auto;
-                            margin: 0 auto;
-                      }
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        margin: 0 auto;
+                    }
                 }
-        }       
-      }
+            }
+        }
         .carousel-indicators {
             position: absolute;
             bottom: -9%;
@@ -142,7 +146,7 @@
                 width: 0.8rem;
                 height: 0.8rem;
                 border-radius: 100%;
-                margin: 0 10px
+                margin: 0 10px;
             }
         }
     }
@@ -151,17 +155,17 @@
 @include small-phone-width {
     @include index-carousel;
     #carouselExampleIndicators {
-        .carousel-inner{
+        .carousel-inner {
             .carousel-item {
                 a {
-                      img {
-                            max-width: 100%;
-                            height: auto;
-                            margin: 0 auto;
-                      }
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        margin: 0 auto;
+                    }
                 }
-        }       
-      }
+            }
+        }
         .carousel-indicators {
             position: absolute;
             bottom: -9%;
@@ -171,7 +175,7 @@
                 width: 0.8rem;
                 height: 0.8rem;
                 border-radius: 100%;
-                margin: 0 10px
+                margin: 0 10px;
             }
         }
     }

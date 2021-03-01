@@ -1,4 +1,18 @@
-@include alltext-decoration;
-.brightness{
-    filter: brightness(50%);
+@include big-pc-width{
+
+}
+@include pc-width{
+
+}
+@include small-pc-width{
+
+}
+@include pad-width{
+
+}
+@include phone-width{
+
+}
+@include small-phone-width{
+    
 }
