@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Yusei+Magic&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,12 +50,9 @@ table {
   border-spacing: 0;
 }
 
-html, body, main {
-  height: 100%;
-}
-
 body {
   font-size: 12px;
+  font-family: '微軟正黑體', sans-serif;
 }
 
 .header {
@@ -827,10 +825,10 @@ footer .footer-grids div:last-child {
 }
 
 @media all and (min-width: 1200px) {
-  .container {
+  .aboutus-container {
     margin-top: 20px;
   }
-  .container .row .about-article {
+  .aboutus-container .row .about-article {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -842,30 +840,30 @@ footer .footer-grids div:last-child {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .container .row .about-article img {
+  .aboutus-container .row .about-article img {
     position: absolute;
   }
-  .container .row .about-article div {
+  .aboutus-container .row .about-article div {
     width: 50%;
     height: auto;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 15px 20px;
   }
-  .container .row .about-article div p {
+  .aboutus-container .row .about-article div p {
     font-size: 1rem;
     color: #fff;
     padding-top: 10px;
   }
-  .container .row .clearfix img {
+  .aboutus-container .row .clearfix img {
     margin-right: 15px;
     width: 230px;
     height: auto;
   }
-  .container .row .clearfix p {
+  .aboutus-container .row .clearfix p {
     font-size: 1rem;
   }
-  .container .row .block-cocoa {
+  .aboutus-container .row .block-cocoa {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -873,7 +871,7 @@ footer .footer-grids div:last-child {
         -ms-flex-align: center;
             align-items: center;
   }
-  .container .row .block-master {
+  .aboutus-container .row .block-master {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -888,10 +886,10 @@ footer .footer-grids div:last-child {
 }
 
 @media all and (min-width: 992px) and (max-width: 1199px) {
-  .container {
+  .aboutus-container {
     margin-top: 20px;
   }
-  .container .row .about-article {
+  .aboutus-container .row .about-article {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -903,30 +901,30 @@ footer .footer-grids div:last-child {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .container .row .about-article img {
+  .aboutus-container .row .about-article img {
     position: absolute;
   }
-  .container .row .about-article div {
+  .aboutus-container .row .about-article div {
     width: 50%;
     height: auto;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 15px 20px;
   }
-  .container .row .about-article div p {
+  .aboutus-container .row .about-article div p {
     font-size: 1rem;
     color: #fff;
     padding-top: 10px;
   }
-  .container .row .clearfix img {
+  .aboutus-container .row .clearfix img {
     margin-right: 15px;
     width: 230px;
     height: auto;
   }
-  .container .row .clearfix p {
+  .aboutus-container .row .clearfix p {
     font-size: 1rem;
   }
-  .container .row .block-cocoa {
+  .aboutus-container .row .block-cocoa {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -934,7 +932,7 @@ footer .footer-grids div:last-child {
         -ms-flex-align: center;
             align-items: center;
   }
-  .container .row .block-master {
+  .aboutus-container .row .block-master {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -949,19 +947,19 @@ footer .footer-grids div:last-child {
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
-  .container {
+  .aboutus-container {
     margin-top: 20px;
   }
-  .container p {
+  .aboutus-container p {
     line-height: 1.5rem;
     font-size: 0.8rem;
   }
-  .container .row .clearfix img {
+  .aboutus-container .row .clearfix img {
     margin-right: 15px;
     width: 230px;
     height: auto;
   }
-  .container .row .block-cocoa {
+  .aboutus-container .row .block-cocoa {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -969,8 +967,8 @@ footer .footer-grids div:last-child {
         -ms-flex-align: center;
             align-items: center;
   }
-  .container .row .block-master,
-  .container .row .about-article {
+  .aboutus-container .row .block-master,
+  .aboutus-container .row .about-article {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -985,19 +983,19 @@ footer .footer-grids div:last-child {
 }
 
 @media all and (min-width: 576px) and (max-width: 767px) {
-  .container {
+  .aboutus-container {
     margin-top: 20px;
   }
-  .container p {
+  .aboutus-container p {
     line-height: 1.5rem;
     font-size: 0.8rem;
   }
-  .container .row .clearfix img {
+  .aboutus-container .row .clearfix img {
     margin-right: 15px;
     width: 230px;
     height: auto;
   }
-  .container .row .block-cocoa {
+  .aboutus-container .row .block-cocoa {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1005,8 +1003,8 @@ footer .footer-grids div:last-child {
         -ms-flex-align: center;
             align-items: center;
   }
-  .container .row .block-master,
-  .container .row .about-article {
+  .aboutus-container .row .block-master,
+  .aboutus-container .row .about-article {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1021,37 +1019,111 @@ footer .footer-grids div:last-child {
 }
 
 @media all and (min-width: 480px) and (max-width: 575px) {
-  .container .row .clearfix img {
+  .aboutus-container .row .clearfix img {
     width: 70%;
     height: auto;
     display: block;
     margin: 0 auto;
   }
-  .container .row .clearfix div {
+  .aboutus-container .row .clearfix div {
     margin: 10px 30px 30px 30px;
   }
-  .container .row .clearfix div h1 {
+  .aboutus-container .row .clearfix div h1 {
     text-align: center;
   }
-  .container .row .clearfix div p {
+  .aboutus-container .row .clearfix div p {
     text-align: inherit;
   }
 }
 
 @media all and (max-width: 479px) {
-  .container .row .clearfix img {
+  .aboutus-container .row .clearfix img {
     width: 70%;
     height: auto;
     display: block;
     margin: 0 auto;
   }
-  .container .row .clearfix div {
+  .aboutus-container .row .clearfix div {
     margin: 10px 30px 30px 30px;
   }
-  .container .row .clearfix div h1 {
+  .aboutus-container .row .clearfix div h1 {
     text-align: center;
   }
-  .container .row .clearfix div p {
+  .aboutus-container .row .clearfix div p {
     text-align: inherit;
   }
+}
+
+.products-container h2 {
+  font-family: "Yusei Magic", sans-serif;
+  font-size: 2rem;
+  color: #e6af2e;
+  padding: 30px 0;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products-container h2::before {
+  content: "";
+  width: 5px;
+  height: 2.5rem;
+  display: inline-block;
+  background-color: #ef6461;
+  margin: 0 1.2rem -3px;
+  border-radius: 5px;
+}
+
+.products-container .card .card-body h5 {
+  font-size: 1.3rem;
+}
+
+.products-container .card .card-body .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 20vh;
+}
+
+.products-container .card .card-body .price .sale-price {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #c1272d;
+}
+
+.products-container .card .card-body .price .origin-price {
+  font-size: 1rem;
+  color: #b3b3b3;
+  text-decoration: line-through;
+}
+
+.products-container .card .card-body .card-body-footer {
+  width: 100%;
+  height: 4rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000;
+}
+
+.products-container .card .card-body .card-body-footer a {
+  color: #e6af2e;
 }

@@ -1,9 +1,8 @@
 //共同
-html,body,main {
-    height: 100%;
-}
 body{
     font-size: 12px;
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&family=Yusei+Magic&display=swap');
+    font-family: '微軟正黑體', sans-serif;
 }
 .header {
     padding: 0;

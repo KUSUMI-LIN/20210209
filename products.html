@@ -37,22 +37,23 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="products.html">產品介紹</a>
-                        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                            <i class="bi bi-caret-down-fill"></i>
-                        </button>
-                      <div class="collapse" id="collapseExample">
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    <div class="collapse" id="collapseExample">
                         <div class="card">
                             <ul class="list-group list-group-flush">
                                 <li><a class="dropdown-item" href="product01.html">經典巧克力</a></li>
-                                <li><a class="dropdown-item" href="product02.html">辣巧克力</a></li>
+                                <li><a class="dropdown-item" href="product02.html">辣椒巧克力</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
                                 <li><a class="dropdown-item" href="product03.html">經典禮盒</a></li>
                             </ul>
-                          </div>
-                      </div>
-                    
+                        </div>
+                    </div>
+
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">最新消息</a>
@@ -95,11 +96,11 @@
                         </li>
                         <li class="nav-item dropdown" style="display: flex;">
                             <a class="nav-link" href="products.html">
-                               產品介紹</a>
-                           <a class="nav-link dropdown-toggle" href="products.html" id="navbarDropdown" role="button"
-                               data-bs-toggle="dropdown" aria-expanded="false" style="padding: 8px 0;">
-                           </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                                產品介紹</a>
+                            <a class="nav-link dropdown-toggle" href="products.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="padding: 8px 0;">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="product01.html">經典巧克力</a></li>
                                 <li><a class="dropdown-item" href="product02.html">辣椒巧克力</a></li>
                                 <li>
@@ -119,41 +120,121 @@
             </div>
         </nav>
     </div>
-
-    <!--首頁輪播圖-->
-    <main id="carouselimg">
-        <div id="carouselExampleIndicators" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel"
-            data-bs-interval="4000">
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <a>
-                        <img src="images/index/01.jpg" class="d-sm-block d-none" alt="...">
-                        <img src="images/index/01m.jpg" class="d-sm-none d-block w-auto" alt="...">
-                    </a>
+    <!--產品列表----------------------------->
+    <main class="container products-container">
+        <h2>人氣商品</h2>
+        <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/products/10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">經典巧克力</h5>
+                        <div class="price">
+                            <div class="origin-price">
+                            </div>
+                            <div class="sale-price">
+                                $300
+                            </div>
+                        </div>
+                        <div class="card-body-footer">
+                            <a class="button" href="#">
+                                <img><i class="nav-icon bi bi-cart"></i>
+                                加入購物車
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <a>
-                        <img src="images/index/02.jpg" class="d-sm-block d-none" alt="...">
-                        <img src="images/index/02m.jpg" class="d-sm-none d-block w-auto" alt="...">
-                    </a>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/products/13.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">辣味巧克力</h5>
+                        <div class="price">
+                            <div class="origin-price">
+                                $400
+                            </div>
+                            <div class="sale-price">
+                                $320
+                            </div>
+                        </div>
+                        <div class="card-body-footer">
+                            <a class="button" href="#">
+                                <img><i class="nav-icon bi bi-cart"></i>
+                                加入購物車
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <a>
-                        <img src="images/index/03.jpg" class="d-sm-block d-none" alt="...">
-                        <img src="images/index/03m.jpg" class="d-sm-none d-block w-auto" alt="...">
-                    </a>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/products/11.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">百香果巧克力</h5>
+                        <div class="price">
+                            <div class="origin-price">
+                                $500
+                            </div>
+                            <div class="sale-price">
+                                $420
+                            </div>
+                        </div>
+                        <div class="card-body-footer">
+                            <a class="button" href="#">
+                                <img><i class="nav-icon bi bi-cart"></i>
+                                加入購物車
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <a>
-                        <img src="images/index/04.jpg" class="d-sm-block d-none" alt="...">
-                        <img src="images/index/04m.jpg" class="d-sm-none d-block w-auto" alt="...">
-                    </a>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/products/12.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">覆盆莓巧克力</h5>
+                        <div class="price">
+                            <div class="origin-price">
+                                $500
+                            </div>
+                            <div class="sale-price">
+                                $420
+                            </div>
+                        </div>
+                        <div class="card-body-footer">
+                            <a class="button" href="#">
+                                <img><i class="nav-icon bi bi-cart"></i>
+                                加入購物車
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="width: 80%; margin: 3rem auto;">
+        <h2>禮盒專區</h2>
+        <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="images/products/14.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">經典禮盒</h5>
+                        <div class="price">
+                            <div class="origin-price">
+                                $1300
+                            </div>
+                            <div class="sale-price">
+                                $1100
+                            </div>
+                        </div>
+                        <div class="card-body-footer">
+                            <a class="button" href="#">
+                                <img><i class="nav-icon bi bi-cart"></i>
+                                加入購物車
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

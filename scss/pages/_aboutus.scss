@@ -12,7 +12,7 @@
     padding: 10px;
 }
 @include big-pc-width {
-    .container {
+    .aboutus-container {
         margin-top: 20px;
         .row {
             .about-article {
@@ -59,7 +59,7 @@
     }
 }
 @include pc-width {
-    .container {
+    .aboutus-container {
         margin-top: 20px;
         .row {
             .about-article {
@@ -106,7 +106,7 @@
     }
 }
 @include small-pc-width {
-    .container {
+    .aboutus-container {
         margin-top: 20px;
         p {
             line-height: 1.5rem;
@@ -134,7 +134,7 @@
     }
 }
 @include pad-width {
-    .container {
+    .aboutus-container {
         margin-top: 20px;
         p {
             line-height: 1.5rem;
@@ -162,7 +162,7 @@
     }
 }
 @include phone-width {
-    .container {
+    .aboutus-container {
         .row {
             .clearfix {
                 img {
@@ -187,7 +187,7 @@
     }
 }
 @include small-phone-width {
-    .container {
+    .aboutus-container {
         .row {
             .clearfix {
                 img {
