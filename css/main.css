@@ -812,11 +812,25 @@ footer .footer-grids div:last-child {
   }
 }
 
+.text-one {
+  background-image: linear-gradient(120deg, #ffedbc 0%, #f0cb35 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+}
+
+.text-two {
+  font-size: 2rem;
+  color: #e6af2e;
+  font-family: "Yusei Magic", sans-serif;
+  padding: 10px;
+}
+
 @media all and (min-width: 1200px) {
   .container {
     margin-top: 20px;
   }
-  .container .row #about-article {
+  .container .row .about-article {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -828,25 +842,20 @@ footer .footer-grids div:last-child {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .container .row #about-article img {
+  .container .row .about-article img {
     position: absolute;
   }
-  .container .row #about-article div {
+  .container .row .about-article div {
     width: 50%;
     height: auto;
     position: absolute;
-  }
-  .container .row #about-article div p {
-    font-size: 1rem;
-    color: #fff;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 15px 20px;
   }
-  .container .row #about-article div p .text-two {
-    font-size: 2rem;
-    color: #e6af2e;
-    font-family: 'Yusei Magic', sans-serif;
-    padding-right: 10px;
+  .container .row .about-article div p {
+    font-size: 1rem;
+    color: #fff;
+    padding-top: 10px;
   }
   .container .row .clearfix img {
     margin-right: 15px;
@@ -864,11 +873,66 @@ footer .footer-grids div:last-child {
         -ms-flex-align: center;
             align-items: center;
   }
-  .container .row .block-cocoa .text-one {
-    background-image: linear-gradient(120deg, #ffedbc 0%, #f0cb35 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: 0 88%;
+  .container .row .block-master {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    margin-top: 20px;
+  }
+  .container .row .about-article {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .row .about-article img {
+    position: absolute;
+  }
+  .container .row .about-article div {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+  }
+  .container .row .about-article div p {
+    font-size: 1rem;
+    color: #fff;
+    padding-top: 10px;
+  }
+  .container .row .clearfix img {
+    margin-right: 15px;
+    width: 230px;
+    height: auto;
+  }
+  .container .row .clearfix p {
+    font-size: 1rem;
+  }
+  .container .row .block-cocoa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .container .row .block-master {
     display: -webkit-box;
@@ -881,5 +945,113 @@ footer .footer-grids div:last-child {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    margin-top: 20px;
+  }
+  .container p {
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+  }
+  .container .row .clearfix img {
+    margin-right: 15px;
+    width: 230px;
+    height: auto;
+  }
+  .container .row .block-cocoa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .row .block-master,
+  .container .row .about-article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media all and (min-width: 576px) and (max-width: 767px) {
+  .container {
+    margin-top: 20px;
+  }
+  .container p {
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+  }
+  .container .row .clearfix img {
+    margin-right: 15px;
+    width: 230px;
+    height: auto;
+  }
+  .container .row .block-cocoa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .row .block-master,
+  .container .row .about-article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 575px) {
+  .container .row .clearfix img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .container .row .clearfix div {
+    margin: 10px 30px 30px 30px;
+  }
+  .container .row .clearfix div h1 {
+    text-align: center;
+  }
+  .container .row .clearfix div p {
+    text-align: inherit;
+  }
+}
+
+@media all and (max-width: 479px) {
+  .container .row .clearfix img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .container .row .clearfix div {
+    margin: 10px 30px 30px 30px;
+  }
+  .container .row .clearfix div h1 {
+    text-align: center;
+  }
+  .container .row .clearfix div p {
+    text-align: inherit;
   }
 }
