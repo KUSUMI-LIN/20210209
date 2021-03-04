@@ -1,24 +1,20 @@
 $('document').ready(function () {
-   
+
     //側邊菜單
     $('#side-nav-control').click(function () {
         $('.Label').toggle()
     });
     $('.side-menu-openBtn').click(function () {
         $('.side-bg-block').toggle(0.01)
-        
+
     });
     //導覽列搜尋動畫
-    $('.bi-search').click(function () {
-        $('#nav-search').show(300);
+    $('.bi-search').hover(function () {
+        $('#nav-search').show(300)
     });
-   
+    //購物車觸發警報
+    $('.shoppingcar-button').click(function () {
+        $('.shoppingcar-alert').show(0.3).delay(1000).fadeOut(500)
+    });
 });
 
-/*隱藏
-$('this').mouseup(function (e) {
-    var container = $(".side-menu"); // 這邊放你想要排除的區塊
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-        container.hide();
-    }
-});*/

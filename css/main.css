@@ -52,7 +52,7 @@ table {
 
 body {
   font-size: 12px;
-  font-family: '微軟正黑體', sans-serif;
+  font-family: "微軟正黑體", sans-serif;
 }
 
 .header {
@@ -810,6 +810,41 @@ footer .footer-grids div:last-child {
   }
 }
 
+button {
+  outline: none;
+}
+
+.shoppingcar-button {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000;
+}
+
+.shoppingcar-button a {
+  color: #e6af2e;
+  width: 100%;
+  text-align: center;
+}
+
+.shoppingcar-alert {
+  position: fixed;
+  max-width: 50%;
+  top: 70px;
+  right: 20px;
+  z-index: 1100;
+  display: none;
+}
+
 .text-one {
   background-image: linear-gradient(120deg, #ffedbc 0%, #f0cb35 100%);
   background-repeat: no-repeat;
@@ -1054,12 +1089,19 @@ footer .footer-grids div:last-child {
   }
 }
 
+h3 {
+  font-size: 1.2rem;
+}
+
+.products-container {
+  margin-top: 25px;
+}
+
 .products-container h2 {
   font-family: "Yusei Magic", sans-serif;
   font-size: 2rem;
   color: #e6af2e;
   padding: 30px 0;
-  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1078,8 +1120,14 @@ footer .footer-grids div:last-child {
   border-radius: 5px;
 }
 
-.products-container .card .card-body h5 {
-  font-size: 1.3rem;
+.products-container .card .card-body div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 25px;
 }
 
 .products-container .card .card-body .price {
@@ -1089,13 +1137,10 @@ footer .footer-grids div:last-child {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 20vh;
 }
 
 .products-container .card .card-body .price .sale-price {
   font-size: 1.2rem;
-  margin-top: 20px;
-  margin-bottom: 20px;
   color: #c1272d;
 }
 
@@ -1105,25 +1150,31 @@ footer .footer-grids div:last-child {
   text-decoration: line-through;
 }
 
-.products-container .card .card-body .card-body-footer {
-  width: 100%;
-  height: 4rem;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  font-size: 1.2rem;
+.products-container .pro-p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px;
+}
+
+.products-container .pro-p p {
+  margin: 20px 0;
+}
+
+.products-container .pro-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #000;
-}
-
-.products-container .card .card-body .card-body-footer a {
-  color: #e6af2e;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
