@@ -17,6 +17,9 @@
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!--購物車-->
+
 </head>
 
 <body>
@@ -57,9 +60,7 @@
                     </div>
 
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="news.html">最新消息</a>
-                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="member.html">會員專區</a>
                 </li>
@@ -79,7 +80,12 @@
                 </input>
             </form>
             <a href="member.html"><i class="nav-icon bi bi-person"></i></a>
-            <a href="#"><i class="nav-icon bi bi-cart"></i></a>
+            <a href="shoppingcar.html" class="shoppingCar">
+                <span class="view">
+                    <text class='text'>2</text>
+                </span>
+                <i class="nav-icon bi bi-cart"></i>
+            </a>
             <label for="side-menu-switch">
                 <i class="nav-icon fas fa-bars side-menu-openBtn d-block d-md-none" data-bs-target="#side-menu-switch"
                     aria-controls="side-menu-switch" aria-expanded="false" aria-label="Toggle navigation"></i>
@@ -113,9 +119,7 @@
                                 <li><a class="dropdown-item" href="productClassicBox.html">經典禮盒</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="news.html">最新消息</a>
-                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="member.html">會員專區</a>
                         </li>
@@ -133,140 +137,14 @@
         <h2>人氣商品</h2>
         <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-4">
             <div class="col">
-                <div class="card h-100">
-                    <img src="images/products/10.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">經典巧克力</h3>
-                        <div class="price">
-                            <div class="origin-price">
-                            </div>
-                            <div class="sale-price">
-                                $300
-                            </div>
-                        </div>
-                        <div>
-                            <a href="productClassic.html"
-                                style="border-bottom:1px dashed gray; font-size: 1rem;">➔產品介紹</a>
-                        </div>
-                        <div class="card-body-footer shoppingcar-button">
-                            <a href="#">
-                                <img><i class="nav-icon bi bi-cart"></i>
-                                加入購物車
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/products/13.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">辣椒巧克力</h3>
-                        <div class="price">
-                            <div class="origin-price">
-                                $400
-                            </div>
-                            <div class="sale-price">
-                                $320
-                            </div>
-                        </div>
-                        <div>
-                            <a href="productChili.html"
-                                style="border-bottom:1px dashed gray; font-size: 1rem;">➔產品介紹</a>
-                        </div>
-                        <div class="card-body-footer shoppingcar-button">
-                            <a href="#">
-                                <img><i class="nav-icon bi bi-cart"></i>
-                                加入購物車
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/products/11.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">百香果巧克力</h3>
-                        <div class="price">
-                            <div class="origin-price">
-                                $500
-                            </div>
-                            <div class="sale-price">
-                                $420
-                            </div>
-                        </div>
-                        <div>
-                            <a href="productPassionFruit.html"
-                                style="border-bottom:1px dashed gray; font-size: 1rem;">➔產品介紹</a>
-                        </div>
-                        <div class="card-body-footer shoppingcar-button">
-                            <a href="#">
-                                <img><i class="nav-icon bi bi-cart"></i>
-                                加入購物車
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/products/12.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">覆盆莓巧克力</h3>
-                        <div class="price">
-                            <div class="origin-price">
-                                $500
-                            </div>
-                            <div class="sale-price">
-                                $420
-                            </div>
-                        </div>
-                        <div>
-                            <a href="productRaspberry.html"
-                                style="border-bottom:1px dashed gray; font-size: 1rem;">➔產品介紹</a>
-                        </div>
-                        <div class="card-body-footer shoppingcar-button">
-                            <a href="#">
-                                <img><i class="nav-icon bi bi-cart"></i>
-                                加入購物車
-                            </a>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
+
         <hr style="width: 80%; margin: 3rem auto;">
         <h2>禮盒專區</h2>
-        <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-4">
-            <div class="col">
-                <div class="card h-100">
-                    <img src="images/products/14.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title">經典禮盒</h3>
-                        <div class="price">
-                            <div class="origin-price">
-                                $1300
-                            </div>
-                            <div class="sale-price">
-                                $1100
-                            </div>
-                        </div>
-                        <div>
-                            <a href="productClassicBox.html"
-                                style="border-bottom:1px dashed gray; font-size: 1rem;">➔產品介紹</a>
-                        </div>
-                        <div class="card-body-footer shoppingcar-button">
-                            <a href="#">
-                                <img><i class="nav-icon bi bi-cart"></i>
-                                加入購物車
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
+    </div>
     <!--footer-->
     <footer>
         <div class="footer-grids">
@@ -285,6 +163,9 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/all.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/list.js"></script>
+
 </body>
 
 </html>

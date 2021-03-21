@@ -18,6 +18,7 @@ p {
 .brightness {
     filter: brightness(50%);
 }
+
 /*********大型電腦*****/
 @include big-pc-width {
     .header {
@@ -33,6 +34,24 @@ p {
             top: 1rem;
             left: auto;
             right: 3%;
+            .shoppingCar {
+                .view {
+                    position: absolute;
+                    right: 10px;
+                    top: -5px;
+                    width: 15px;
+                    height: 15px;
+                    background-color: #ff445e;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .text {
+                        color: #ffffff;
+                        font-size: 20rpx;
+                    }
+                }
+            }
             .nav-icon {
                 color: #fff;
                 font-size: 1rem;

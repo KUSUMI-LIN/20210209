@@ -1,0 +1,98 @@
+#shoppingcar-main {
+    //購物進度條
+    .shoppingcar-list {
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        margin: 30px 0 60px 0;
+        li {
+            span {
+                margin: 40px 30px;
+            }
+        }
+        .active {
+            color: red;
+            span {
+                border-bottom: red 1px dashed;
+            }
+        }
+    }
+    //購物車系統
+    .noshoppingCar {
+        display: flex;
+        justify-content: center;
+        font-size: 1.3rem;
+        padding-top: 50px;
+    }
+    .container {
+        font-size: 1rem;
+        width: 1000px;
+        .item-header {
+            background-color: grey;
+            padding: 15px 0;
+            display: flex;
+            flex-direction: row;
+            padding: 15px 0 15px 25px;
+        }
+        .item-body {
+            padding: 15px 0;
+            display: flex;
+            flex-direction: column;
+            .item-pro {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                .item-img {
+                    img {
+                        width: 8rem;
+                        border-radius: 3px;
+                        margin: 10px 40px 10px 0px;
+                    }
+                }
+            }
+        }
+        button {
+            margin: 0 10px;
+        }
+        .item-img {
+            display: flex;
+            align-items: center;
+            width: calc(100% - 480px);
+        }
+        .item-price {
+            width: 150px;
+        }
+        .count {
+            width: 130px;
+        }
+        .amount {
+            width: 120px;
+        }
+        .operate {
+            width: 100px;
+        }
+        .item-total {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+        .checkout-btn {
+            width: 20%;
+            display: block;
+            margin: 20px auto;
+        }
+    }
+    .total {
+        display: flex;
+        justify-content: flex-end;
+        width: 1000px;
+        padding: 20px;
+    }
+    .checkout-btn {
+        display: block;
+        margin: 0 auto;
+    }
+}
+.hidden {
+    visibility: hidden;
+}

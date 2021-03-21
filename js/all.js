@@ -13,7 +13,7 @@ $('document').ready(function () {
         $('#nav-search').show(300)
     });
     //購物車觸發警報
-    $('.shoppingcar-button').click(function () {
+    $('.shoppingcarBtn').click(function () {
         $('.shoppingcar-alert').show(0.3).delay(1000).fadeOut(500)
     });
 });
