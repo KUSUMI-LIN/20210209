@@ -1260,6 +1260,18 @@ button {
   padding: 15px 0 15px 25px;
 }
 
+#shoppingcar-main .container .item-header .item-price,
+#shoppingcar-main .container .item-header .count,
+#shoppingcar-main .container .item-header .amount,
+#shoppingcar-main .container .item-header .operate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #shoppingcar-main .container .item-body {
   padding: 15px 0;
   display: -webkit-box;
@@ -1300,33 +1312,47 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: calc(100% - 480px);
+  width: calc(100% - 460px);
 }
 
 #shoppingcar-main .container .item-price {
-  width: 150px;
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #shoppingcar-main .container .count {
-  width: 130px;
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #shoppingcar-main .container .amount {
   width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #shoppingcar-main .container .operate {
   width: 100px;
-}
-
-#shoppingcar-main .container .item-total {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #shoppingcar-main .container .checkout-btn {
@@ -1343,7 +1369,13 @@ button {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 1000px;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 20px 50px 20px 0;
+  font-size: 1.5rem;
+}
+
+#shoppingcar-main .total span {
+  margin-left: 20px;
 }
 
 #shoppingcar-main .checkout-btn {

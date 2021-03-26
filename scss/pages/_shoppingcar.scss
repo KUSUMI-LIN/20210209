@@ -33,6 +33,13 @@
             display: flex;
             flex-direction: row;
             padding: 15px 0 15px 25px;
+            .item-price,
+            .count,
+            .amount,
+            .operate {
+                display: flex;
+                justify-content: center;
+            }
         }
         .item-body {
             padding: 15px 0;
@@ -57,24 +64,27 @@
         .item-img {
             display: flex;
             align-items: center;
-            width: calc(100% - 480px);
+            width: calc(100% - 460px);
         }
         .item-price {
-            width: 150px;
+            width: 120px;
+            display: flex;
+            justify-content: center;
         }
         .count {
-            width: 130px;
+            width: 120px;
+            display: flex;
+            justify-content: center;
         }
         .amount {
             width: 120px;
+            display: flex;
+            justify-content: center;
         }
         .operate {
             width: 100px;
-        }
-        .item-total {
             display: flex;
-            justify-content: flex-end;
-            margin-top: 20px;
+            justify-content: center;
         }
         .checkout-btn {
             width: 20%;
@@ -86,7 +96,12 @@
         display: flex;
         justify-content: flex-end;
         width: 1000px;
-        padding: 20px;
+        margin: 0 auto;
+        padding: 20px 50px 20px 0;
+        font-size: 1.5rem;
+        span {
+            margin-left: 20px;
+        }
     }
     .checkout-btn {
         display: block;
