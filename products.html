@@ -47,14 +47,14 @@
                     <div class="collapse" id="collapseExample">
                         <div class="card">
                             <ul class="list-group list-group-flush">
-                                <li><a class="dropdown-item" href="productClassic.html">經典巧克力</a></li>
-                                <li><a class="dropdown-item" href="productChili.html">辣椒巧克力</a></li>
-                                <li><a class="dropdown-item" href="productPassionFruit.html">百香果巧克力</a></li>
-                                <li><a class="dropdown-item" href="productRaspberry.html">覆盆莓巧克力</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=1">經典巧克力</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=2">辣椒巧克力</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=3">百香果巧克力</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=4">覆盆莓巧克力</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="productClassicBox.html">經典禮盒</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=5">經典禮盒</a></li>
                             </ul>
                         </div>
                     </div>
@@ -80,18 +80,19 @@
                 </input>
             </form>
             <a href="member.html"><i class="nav-icon bi bi-person"></i></a>
+            <!--購物車數量圖示-->
             <a href="shoppingcar.html" class="shoppingCar">
                 <span class="view">
-                    <text class='text'>2</text>
+                    <text class="total-count"></text>
                 </span>
                 <i class="nav-icon bi bi-cart"></i>
             </a>
-            <label for="side-menu-switch">
-                <i class="nav-icon fas fa-bars side-menu-openBtn d-block d-md-none" data-bs-target="#side-menu-switch"
+            <label for="side-menu-switch" class="side-menu-openBtn">
+                <i class="nav-icon fas fa-bars d-block d-md-none" data-bs-target="#side-menu-switch"
                     aria-controls="side-menu-switch" aria-expanded="false" aria-label="Toggle navigation"></i>
             </label>
         </div>
-        <a class="navbar-brand" href="#"><img src="images/LOGO.svg" alt="LOGO"></a>
+        <a class="navbar-brand" href="index.html"><img src="images/LOGO.svg" alt="LOGO"></a>
         <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -109,14 +110,14 @@
                                 data-bs-toggle="dropdown" aria-expanded="false" style="padding: 8px 0;">
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="productClassic.html">經典巧克力</a></li>
-                                <li><a class="dropdown-item" href="productChili.html">辣椒巧克力</a></li>
-                                <li><a class="dropdown-item" href="productPassionFruit.html">百香果巧克力</a></li>
-                                <li><a class="dropdown-item" href="productRaspberry.html">覆盆莓巧克力</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=1">經典巧克力</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=2">辣椒巧克力</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=3">百香果巧克力</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=4">覆盆莓巧克力</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="productClassicBox.html">經典禮盒</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=5">經典禮盒</a></li>
                             </ul>
                         </li>
 
@@ -136,13 +137,10 @@
     <main class="container products-container">
         <h2>人氣商品</h2>
         <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-4">
-            <div class="col">
+            <div class="col col_hot">
 
             </div>
         </div>
-
-        <hr style="width: 80%; margin: 3rem auto;">
-        <h2>禮盒專區</h2>
     </main>
     </div>
     <!--footer-->
@@ -165,6 +163,7 @@
     <script type="text/javascript" src="js/all.js"></script>
     <script type="text/javascript" src="js/data.js"></script>
     <script type="text/javascript" src="js/list.js"></script>
+    <script type="text/javascript" src="js/cart.js"></script>
 
 </body>
 

@@ -1,17 +1,21 @@
-// 判斷購物車是否為空
-var cartListData = localStorage.getItem('shopCar');
-var arr = JSON.stringify(cartListData);
 
-// 如果我們處理過了資料，就是當陣列的長度為0的時候，沒有資料
-if (arr.arr !== 0) {
-    // 有資料
-    // 把空空如也隱藏
-    $('.noshoppingCar').addClass('hidden');
-} else {
-    // 沒有資料
-    // 把表頭和表格資料隱藏
-    $('.shoppingcar-list,.container').addClass('hidden');
+// 如果我們處理過了資料，就是當陣列為空陣列的時候，陣列長度為4，沒有資料
+
+var cartList = function () {
+    // 判斷購物車是否為空
+    var cartListData = localStorage.getItem('shopCart');
+    var arr = JSON.stringify(cartListData);
+    if (arr.length == 4) {
+        // 沒有資料
+        $('.shoppingcar-list,.item-header,.total,.checkout-btn').hide();
+        $('.noshoppingCar').show();
+    } else {
+        // 有資料
+        $('.noshoppingCar').hide();
+        $('.shoppingcar-list,.item-header,.total,.checkout-btn').show();
+    }
 }
+cartList();
 
 $(function () {
     //1.獲取本地儲存
@@ -38,8 +42,8 @@ $(function () {
                 <a href="javascript:void(0);" class="add" id="${v.name}">+</a>
             </div>
             <div class="amount">
-                <span>$</span>
-                ${v.price * v.number}
+               <span>$</span>
+               <span class="amountCount" id="${v.name}">${v.price * v.number}</span>
             </div>
             <div class="operate">
                <div class="del">
@@ -49,15 +53,17 @@ $(function () {
         </div>
         `
     })
-    list.sort();
     $('.item-body').html(list)
 
-
+    //計算總價
     let totalPrice = 0
+    let totalCount = 0
     dataArr.forEach(item => {
         totalPrice += item.number * item.price
+        totalCount += item.number
     });
     $('.total-money').text(totalPrice)
+    $('.total-count').text(totalCount)
 
 
     //---------------------------------------刪除資料
@@ -73,10 +79,14 @@ $(function () {
         localStorage.setItem('shopCart', JSON.stringify(dataArr))
         //重新計算
         let totalPrice = 0
+        let totalCount = 0
         dataArr.forEach(item => {
             totalPrice += item.number * item.price
+            totalCount += item.number
         });
         $('.total-money').text(totalPrice)
+        $('.total-count').text(totalCount)
+        cartList();
     });
 
     //------------------------購物車數量增減
@@ -93,12 +103,24 @@ $(function () {
         dataArr[Id].number += 1
         //重新存回本地
         localStorage.setItem('shopCart', JSON.stringify(dataArr, dataArr[Id].number))
-        //重新計算
+        //重新計算總價
         let totalPrice = 0
+        let totalCount = 0
         dataArr.forEach(item => {
             totalPrice += item.number * item.price
+            totalCount += item.number
         });
         $('.total-money').text(totalPrice)
+        $('.total-count').text(totalCount)
+
+        //重新計算小計
+        let newList = dataArr.map(function (v) {
+            return `${v.price * v.number}`
+        })
+        let amountCount = document.getElementsByClassName('amountCount')[Id]
+        $(amountCount).html(newList[Id])
+
+
     })
 
     $('.reduce').on('click', function () {
@@ -121,10 +143,19 @@ $(function () {
             localStorage.setItem('shopCart', JSON.stringify(dataArr, dataArr[Id].number))
             //重新計算
             let totalPrice = 0
+            let totalCount = 0
             dataArr.forEach(item => {
                 totalPrice += item.number * item.price
+                totalCount += item.number
             });
             $('.total-money').text(totalPrice)
+            $('.total-count').text(totalCount)
+            //重新計算小計
+            let newList = dataArr.map(function (v) {
+                return `${v.price * v.number}`
+            })
+            let amountCount = document.getElementsByClassName('amountCount')[Id]
+            $(amountCount).html(newList[Id])
         }
         else {
             false;

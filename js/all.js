@@ -1,8 +1,7 @@
 $('document').ready(function () {
-
     //側邊菜單
     $('#side-nav-control').click(function () {
-        $('.Label').toggle()
+        $('.label').toggle()
     });
     $('.side-menu-openBtn').click(function () {
         $('.side-bg-block').toggle(0.01)
@@ -16,5 +15,6 @@ $('document').ready(function () {
     $('.shoppingcarBtn').click(function () {
         $('.shoppingcar-alert').show(0.3).delay(1000).fadeOut(500)
     });
+
 });
 

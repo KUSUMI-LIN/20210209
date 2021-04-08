@@ -37,18 +37,18 @@ p {
             .shoppingCar {
                 .view {
                     position: absolute;
-                    right: 10px;
+                    right: 8px;
                     top: -5px;
-                    width: 15px;
-                    height: 15px;
+                    width: 18px;
+                    height: 18px;
                     background-color: #ff445e;
                     border-radius: 50%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    .text {
+                    .total-count {
                         color: #ffffff;
-                        font-size: 20rpx;
+                        font-size: 4px;
                     }
                 }
             }

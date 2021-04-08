@@ -1,72 +1,36 @@
-let lis = dataMock.map(function (v, i) {
+let list = dataMock.map(function (v, i) {
     // 寫生成結構的程式碼
     return `
     <div class="card shoppingCard">
-    <img src="${v.imgSrc}" class="card-img-top" alt="...">
-    <div class="card-body">
-        <h3 class="itemName">
-        ${v.name}
-        </h3>
-        <div class="price">
-            <div class="origin-price">
-            ${v.price}
+        <img src="${v.imgSrc}" class="card-img-top" alt="...">
+         <div class="card-body">
+            <h3>
+            ${v.name}
+            </h3>
+            <div class="price">
+                <div class="origin-price">
+                <span>$</span>${v.price}
+                </div>
+                <div class="sale-price">
+                <span>$</span>${v.price * 0.9}
+                </div>
             </div>
-            <div class="sale-price">
-            ${v.price * 0.9}
+            <div>
+                <a href="detail.html?id=${v.id}"
+                    style="border-bottom:1px dashed gray; font-size: 1rem;">➔產品介紹</a>
             </div>
-        </div>
-        <div>
-            <a href="detail.html?id=${v.id}"
-                style="border-bottom:1px dashed gray; font-size: 1rem;">➔產品介紹</a>
-        </div>
-        <div class="card-body-footer shoppingcarBtn" id=${v.id}>
-            <a href="##">
-                <img><i class="nav-icon bi bi-cart"></i>
-                加入購物車
-            </a>
+            <div class="card-body-footer shoppingcarBtn" id=${v.id}>
+                <a href="##">
+                    <img><i class="nav-icon bi bi-cart"></i>
+                    加入購物車
+                </a>
+            </div>
         </div>
     </div>
-</div>
-</div>
         `
 });
-$('.col').html(lis.join(''));
+$('.col_hot').html(list.join(''));
 
-
-var shopCart = [
-    {
-        'id': 1,
-        'imgSrc': 'images/products/10.jpg',
-        'name': '經典巧克力',
-        'price': 300,
-        'number': 0,
-        'isChecked': true //預設勾選
-    },
-    {
-        'id': 2,
-        'imgSrc': "images/products/13.jpg",
-        'name': "辣椒巧克力",
-        'price': 500,
-        'number': 0,
-        'isChecked': true
-    },
-    {
-        'id': 3,
-        'imgSrc': "images/products/11.jpg",
-        'name': "百香果巧克力",
-        'price': 600,
-        'number': 0,
-        'isChecked': true
-    },
-    {
-        'id': 4,
-        'imgSrc': "images/products/12.jpg",
-        'name': "覆盆莓巧克力",
-        'price': 600,
-        'number': 0,
-        'isChecked': true
-    }
-]
 
 //宣告 getData 變數作為從 localStorage 取出 value，typeof 會是 string
 var shopCart = localStorage.getItem("shopCart");
@@ -78,8 +42,6 @@ if (shopCart) {
     shopCartAry = [];
 }
 var dataArr = shopCartAry; //陣列資料
-
-console.log(shopCart);
 localStorage.setItem('shopCart', shopCart);//將變數存到localStorage裡
 
 
@@ -114,7 +76,7 @@ $(function () {
             let newGood = {
                 id: good.id,
                 number: i++, //$('.choose-number').val()是string
-                price: good.price,
+                price: (good.price * 0.9),
                 name: good.name,
                 imgSrc: good.imgSrc,
                 isChecked: true
@@ -124,7 +86,14 @@ $(function () {
         }
         //把陣列新增到本地儲存
         localStorage.setItem('shopCart', JSON.stringify(dataArr))
+        //計算總數量
+        let totalCount = 0
+        dataArr.forEach(item => {
+            totalCount += item.number
+        });
+        $('.total-count').text(totalCount)
     })
+
 })
 
 

@@ -23,6 +23,9 @@ let good = dataMock.filter(function (v) {
 
 $('.pro-img > img').attr('src', good.imgSrc)
 $('h3').text(good.name)
-$('.pro-price').text(good.price)
+$('.pro-introduction').text(good.introduction)
+$('.origin-price').text(good.price)
+$('.sale-price').text((good.price * 0.9))
+$('#pro-cartBtn').attr('id', good.id)
 
 

@@ -17,15 +17,9 @@
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
-    <!--購物車警報-->
-    <div class="alert alert-warning alert-dismissible fade show shoppingcar-alert d-none" role="alert">
-        <p>商品已加入購物車</p>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
     <!--側邊選單-->
     <input type="checkbox" name="" id="side-menu-switch" class="d-block d-md-none">
     <div class="side-menu d-block d-md-none" id="side-menu">
@@ -47,23 +41,22 @@
                         aria-expanded="false" aria-controls="collapseExample">
                         <i class="bi bi-caret-down-fill"></i>
                     </button>
-                    </p>
                     <div class="collapse" id="collapseExample">
                         <div class="card">
                             <ul class="list-group list-group-flush">
-                                <li><a class="dropdown-item" href="productClassic.html">經典巧克力</a></li>
-                                <li><a class="dropdown-item" href="productChili.html">辣椒巧克力</a></li>
-                                <li><a class="dropdown-item" href="productPassionFruit.html">百香果巧克力</a></li>
-                                <li><a class="dropdown-item" href="productRaspberry.html">覆盆莓巧克力</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=1">經典巧克力</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=2">辣椒巧克力</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=3">百香果巧克力</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=4">覆盆莓巧克力</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="productClassicBox.html">經典禮盒</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=5">經典禮盒</a></li>
                             </ul>
                         </div>
                     </div>
-                </li>
 
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="member.html">會員專區</a>
                 </li>
@@ -83,13 +76,19 @@
                 </input>
             </form>
             <a href="member.html"><i class="nav-icon bi bi-person"></i></a>
-            <a href="shoppingcar.html" class="shoppingCar"><i class="nav-icon bi bi-cart"></i></a>
-            <label for="side-menu-switch">
-                <i class="nav-icon fas fa-bars side-menu-openBtn d-block d-md-none" data-bs-target="#side-menu-switch"
+            <!--購物車數量圖示-->
+            <a href="shoppingcar.html" class="shoppingCar">
+                <span class="view">
+                    <text class="total-count"></text>
+                </span>
+                <i class="nav-icon bi bi-cart"></i>
+            </a>
+            <label for="side-menu-switch" class="side-menu-openBtn">
+                <i class="nav-icon fas fa-bars d-block d-md-none" data-bs-target="#side-menu-switch"
                     aria-controls="side-menu-switch" aria-expanded="false" aria-label="Toggle navigation"></i>
             </label>
         </div>
-        <a class="navbar-brand" href="#"><img src="images/LOGO.svg" alt="LOGO"></a>
+        <a class="navbar-brand" href="index.html"><img src="images/LOGO.svg" alt="LOGO"></a>
         <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -107,78 +106,49 @@
                                 data-bs-toggle="dropdown" aria-expanded="false" style="padding: 8px 0;">
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="productClassic.html">經典巧克力</a></li>
-                                <li><a class="dropdown-item" href="productChili.html">辣椒巧克力</a></li>
-                                <li><a class="dropdown-item" href="productPassionFruit.html">百香果巧克力</a></li>
-                                <li><a class="dropdown-item" href="productRaspberry.html">覆盆莓巧克力</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=1">經典巧克力</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=2">辣椒巧克力</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=3">百香果巧克力</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=4">覆盆莓巧克力</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="productClassicBox.html">經典禮盒</a></li>
+                                <li><a class="dropdown-item" href="detail.html?id=5">經典禮盒</a></li>
                             </ul>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="member.html">會員專區</a>
+                            <a class="nav-link active" href="member.html">會員專區</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-    <!--購物進度條-->
-    <ul class="shoppingcar-list">
-        <li class="active"><span>確認結帳</span></li>
-        <i class="fas fa-chevron-right"></i>
-        <li><span>填寫資訊</span></li>
-        <i class="fas fa-chevron-right"></i>
-        <li><span>訂單成立</span></li>
-    </ul>
-    <!--購物車系統-->
-    <div id="app">
-        <div class="container" v-if="list.length!=0">
-            <div class="item-header">
-                <div class="item-img">商品名稱</div>
-                <div class="item-price">單價</div>
-                <div class="count">數量</div>
-                <div class="amount">小計</div>
-                <div class="operate"></div>
+    <!--登入頁面-->
+    <main id="main-member">
+        <form>
+            <div class="member-header">
+                <label for="exampleInputEmail1">會員帳號</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="請輸入 email">
             </div>
-            <div class="item_container" v-for="(item,index) in list">
-                <div class="item-body">
-                    <div class="item-img">
-                        <img v-bind:src="item.imgUrl" alt="">
-                        <div class="pro-name">{{item.itemName}}</div>
-                    </div>
-                    <div class="item-price">
-                        <span>$</span>{{item.price}}
-                    </div>
-                    <div class="count">
-                        <button type="button" class="btn btn-dark btn-sm" @click="handleSub(item)"><i
-                                class="fas fa-minus"></i></button>
-                        {{item.count}}
-                        <button type="button" class="btn btn-dark btn-sm" @click="handlePlus(item)">
-                            <i class="fas fa-plus"></i></button>
-                    </div>
-                    <div class="amount"> <span>$</span>{{item.price * item.count}}</div>
-                    <div class="operate">
-                        <i class="far fa-times-circle btn btn-lg" @click="handleDelete(index)">
-                        </i>
-                    </div>
-                </div>
+            <div class="member-block">
+                <label for="exampleInputPassword1">會員密碼</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="請輸入 密碼">
+                <small id="passwordHelpInline" class="text-muted">
+                    Must be 8-20 characters long.
+                </small>
             </div>
-            <div class="total">總計{{tatalPrice}}<span>$</span></div>
-            <button type="button" class="btn btn-warning checkout-btn"><a href="##">前往結帳</a></button>
-        </div>
-        <div v-else>無購物清單</div>
-    </div>
-
+            <button type="submit" class="btn btn-primary">登入</button>
+        </form>
+    </main>
     <!--footer-->
     <footer>
         <div class="footer-grids">
             <hr style="width: 50%; margin: 0px auto 20px auto;">
             <div class="footericon">
-                <p><img src="images/telephone.png">+886(0)2-1234-5678</p>
+                <p><img src="images/telephone.png">+886(0)2-2701-0792</p>
                 <p><img src="images/clock.png">12:00 - 20:00 (週三公休)</p>
                 <p><img src="images/placeholder.png"><a href="##">高雄市楠梓區</a></p>
             </div>
@@ -191,8 +161,8 @@
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/all.js"></script>
-    <script type="text/javascript" src="js/shoppingcar.js"></script>
-
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/cart.js"></script>
 </body>
 
 </html>

@@ -19,11 +19,17 @@
         }
     }
     .row {
-        .col {
+        .col_hot {
             display: flex;
             flex-direction: row;
             width: auto;
-            .card {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .shoppingCard {
+                width: 300px;
+                &:last-child {
+                    margin-top: 50px;
+                }
                 .card-body {
                     div:nth-of-type(2) {
                         display: flex;
@@ -62,7 +68,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-       
     }
 }
 @include big-pc-width {
@@ -77,5 +82,3 @@
 }
 @include small-phone-width {
 }
-
-

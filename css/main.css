@@ -100,10 +100,10 @@ body a:hover {
   }
   .header .navicon .shoppingCar .view {
     position: absolute;
-    right: 10px;
+    right: 8px;
     top: -5px;
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
     background-color: #ff445e;
     border-radius: 50%;
     display: -webkit-box;
@@ -116,9 +116,9 @@ body a:hover {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .header .navicon .shoppingCar .view .text {
+  .header .navicon .shoppingCar .view .total-count {
     color: #ffffff;
-    font-size: 20rpx;
+    font-size: 4px;
   }
   .header .navicon .nav-icon {
     color: #fff;
@@ -663,7 +663,7 @@ footer .footer-grids div:last-child {
   #carouselExampleIndicators .carousel-inner .carousel-item a img {
     max-width: 80vw;
     height: auto;
-    margin: 1% auto;
+    margin: 10px auto;
   }
   #carouselExampleIndicators .carousel-indicators {
     display: -webkit-box;
@@ -856,6 +856,14 @@ button {
   color: #e6af2e;
   width: 100%;
   text-align: center;
+}
+
+#shoppingcar-main .checkout-btn {
+  width: 1000px;
+  max-width: 100%;
+  display: block;
+  margin: 20px auto;
+  padding: 15px 0;
 }
 
 .shoppingcar-alert {
@@ -1138,7 +1146,7 @@ button {
   border-radius: 5px;
 }
 
-.products-container .row .col {
+.products-container .row .col_hot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1147,9 +1155,22 @@ button {
       -ms-flex-direction: row;
           flex-direction: row;
   width: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.products-container .row .col .card .card-body div:nth-of-type(2) {
+.products-container .row .col_hot .shoppingCard {
+  width: 300px;
+}
+
+.products-container .row .col_hot .shoppingCard:last-child {
+  margin-top: 50px;
+}
+
+.products-container .row .col_hot .shoppingCard .card-body div:nth-of-type(2) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1159,7 +1180,7 @@ button {
   margin-bottom: 25px;
 }
 
-.products-container .row .col .card .card-body .price {
+.products-container .row .col_hot .shoppingCard .card-body .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1168,12 +1189,12 @@ button {
           justify-content: space-between;
 }
 
-.products-container .row .col .card .card-body .price .sale-price {
+.products-container .row .col_hot .shoppingCard .card-body .price .sale-price {
   font-size: 1.2rem;
   color: #c1272d;
 }
 
-.products-container .row .col .card .card-body .price .origin-price {
+.products-container .row .col_hot .shoppingCard .card-body .price .origin-price {
   font-size: 1rem;
   color: #b3b3b3;
   text-decoration: line-through;
@@ -1208,6 +1229,35 @@ button {
           align-items: center;
 }
 
+#shoppingcar-main {
+  height: 1000px;
+}
+
+#shoppingcar-main .noshoppingCar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#shoppingcar-main .noshoppingCar div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#shoppingcar-main .noshoppingCar button {
+  margin-top: 25px;
+}
+
 #shoppingcar-main .shoppingcar-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1216,7 +1266,7 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1rem;
-  margin: 30px 0 60px 0;
+  margin: 35px 0 60px 0;
 }
 
 #shoppingcar-main .shoppingcar-list li span {
@@ -1248,7 +1298,8 @@ button {
 }
 
 #shoppingcar-main .container .item-header {
-  background-color: grey;
+  background-color: #051014;
+  color: #fbfffe;
   padding: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1301,8 +1352,8 @@ button {
   margin: 10px 40px 10px 0px;
 }
 
-#shoppingcar-main .container button {
-  margin: 0 10px;
+#shoppingcar-main .container .item-body .item-pro .count .countNum {
+  margin: 0 5px;
 }
 
 #shoppingcar-main .container .item-img {
@@ -1355,46 +1406,81 @@ button {
           justify-content: center;
 }
 
-#shoppingcar-main .container .checkout-btn {
-  width: 20%;
-  display: block;
-  margin: 20px auto;
-}
-
-#shoppingcar-main .total {
+#shoppingcar-main .container .total {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 1000px;
-  margin: 0 auto;
+  width: auto;
   padding: 20px 50px 20px 0;
   font-size: 1.5rem;
 }
 
-#shoppingcar-main .total span {
+#shoppingcar-main .container .total span {
   margin-left: 20px;
 }
 
-#shoppingcar-main .checkout-btn {
-  display: block;
-  margin: 0 auto;
+#main-member {
+  height: 100vh;
 }
 
-.hidden {
-  visibility: hidden;
+#main-member form {
+  width: 400px;
+  margin: 50px auto;
 }
 
-#main-member .member-header {
-  margin: 20px 0;
+#main-member form .member-header label,
+#main-member form .member-block label {
   font-size: 1.2rem;
   padding: 10px;
 }
 
-#main-member .member-block {
-  width: 500px;
-  margin: 50px auto;
-  font-size: 0.9rem;
+#main-member form button {
+  background-color: #e6af2e;
+  width: 400px;
+  margin-top: 30px;
+}
+
+.detail-container {
+  margin: 25px auto;
+  font-size: 1.2rem;
+}
+
+.detail-container .row .pro-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.detail-container .row .pro-p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 3rem;
+}
+
+.detail-container .row .pro-p div div:first-of-type {
+  font-size: 1rem;
+  color: #b3b3b3;
+  text-decoration: line-through;
+}
+
+.detail-container .row .pro-p div div:nth-of-type(2) {
+  font-size: 1.5rem;
+  color: #c1272d;
+}
+
+h3 {
+  font-size: 1.3rem;
 }
