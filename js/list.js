@@ -1,6 +1,7 @@
 let list = dataMock.map(function (v, i) {
     // 寫生成結構的程式碼
     return `
+    <div class="col col_hot">
     <div class="card shoppingCard">
         <img src="${v.imgSrc}" class="card-img-top" alt="...">
          <div class="card-body">
@@ -27,9 +28,10 @@ let list = dataMock.map(function (v, i) {
             </div>
         </div>
     </div>
+    </div>
         `
 });
-$('.col_hot').html(list.join(''));
+$('.container-fluid>.row').html(list.join(''));
 
 
 //宣告 getData 變數作為從 localStorage 取出 value，typeof 會是 string

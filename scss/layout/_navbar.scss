@@ -107,9 +107,27 @@ p {
             top: 1rem;
             left: auto;
             right: 3%;
+            .shoppingCar {
+                .view {
+                    position: absolute;
+                    right: 8px;
+                    top: -5px;
+                    width: 18px;
+                    height: 18px;
+                    background-color: #ff445e;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .total-count {
+                        color: #ffffff;
+                        font-size: 4px;
+                    }
+                }
+            }
             .nav-icon {
                 color: #fff;
-                font-size: 12px;
+                font-size: 1.1rem;
                 margin: 0.8rem;
             }
             form {
@@ -161,6 +179,24 @@ p {
             top: 1rem;
             left: auto;
             right: 3%;
+            .shoppingCar {
+                .view {
+                    position: absolute;
+                    right: 8px;
+                    top: -5px;
+                    width: 18px;
+                    height: 18px;
+                    background-color: #ff445e;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .total-count {
+                        color: #ffffff;
+                        font-size: 4px;
+                    }
+                }
+            }
             .nav-icon {
                 color: #fff;
                 font-size: 1rem;
@@ -226,6 +262,24 @@ p {
             position: absolute;
             top: 25%;
             right: 3%;
+            .shoppingCar {
+                .view {
+                    position: absolute;
+                    right: 56px;
+                    top: 8px;
+                    width: 18px;
+                    height: 18px;
+                    background-color: #ff445e;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .total-count {
+                        color: #ffffff;
+                        font-size: 4px;
+                    }
+                }
+            }
             .side-menu-openBtn {
                 background: none;
                 border: none;
@@ -342,6 +396,24 @@ p {
             position: absolute;
             top: 18%;
             right: 3%;
+            .shoppingCar {
+                .view {
+                    position: absolute;
+                    right: 50px;
+                    top: 6px;
+                    width: 18px;
+                    height: 18px;
+                    background-color: #ff445e;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .total-count {
+                        color: #ffffff;
+                        font-size: 4px;
+                    }
+                }
+            }
             .side-menu-openBtn {
                 background: none;
                 border: none;
@@ -459,6 +531,24 @@ p {
             position: absolute;
             top: 18%;
             right: 3%;
+            .shoppingCar {
+                .view {
+                    position: absolute;
+                    right: 50px;
+                    top: 6px;
+                    width: 18px;
+                    height: 18px;
+                    background-color: #ff445e;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .total-count {
+                        color: #ffffff;
+                        font-size: 4px;
+                    }
+                }
+            }
             .side-menu-openBtn {
                 background: none;
                 border: none;

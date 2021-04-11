@@ -1,84 +1,180 @@
-//產品總覽
-.products-container {
+//共同樣式
+#products-container {
     margin-top: 25px;
-    h2 {
-        font-family: "Yusei Magic", sans-serif;
-        font-size: 2rem;
-        color: $maincolor01;
-        padding: 30px 0;
-        display: flex;
-        align-items: center;
-        &::before {
-            content: "";
-            width: 5px;
-            height: 2.5rem;
-            display: inline-block;
-            background-color: $Secondary-color02;
-            margin: 0 1.2rem -3px;
-            border-radius: 5px;
-        }
-    }
-    .row {
-        .col_hot {
+    .container-fluid {
+        h2 {
+            font-family: "Yusei Magic", sans-serif;
+            font-size: 2rem;
+            color: $maincolor01;
+            padding: 30px 0;
             display: flex;
-            flex-direction: row;
-            width: auto;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            .shoppingCard {
-                width: 300px;
-                &:last-child {
-                    margin-top: 50px;
-                }
-                .card-body {
-                    div:nth-of-type(2) {
-                        display: flex;
-                        justify-content: flex-end;
-                        margin-bottom: 25px;
-                    }
-                    .price {
-                        display: flex;
-                        justify-content: space-between;
-                        .sale-price {
-                            font-size: 1.2rem;
-                            color: #c1272d;
+            align-items: center;
+            &::before {
+                content: "";
+                width: 5px;
+                height: 2.5rem;
+                display: inline-block;
+                background-color: $Secondary-color02;
+                margin: 0 1.2rem -3px;
+                border-radius: 5px;
+            }
+        }
+        .row {
+            .col_hot {
+                .shoppingCard {
+                    .card-body {
+                        div:nth-of-type(2) {
+                            display: flex;
+                            justify-content: flex-end;
+                            margin-bottom: 25px;
                         }
-                        .origin-price {
-                            font-size: 1rem;
-                            color: #b3b3b3;
-                            text-decoration: line-through;
+                        .price {
+                            display: flex;
+                            justify-content: space-between;
+                            .sale-price {
+                                font-size: 1.2rem;
+                                color: #c1272d;
+                            }
+                            .origin-price {
+                                font-size: 1rem;
+                                color: #b3b3b3;
+                                text-decoration: line-through;
+                            }
                         }
                     }
                 }
             }
         }
-    }
-
-    //產品介紹
-    .pro-p {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        p {
-            margin: 20px 0;
+        //產品介紹
+        .pro-p {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            p {
+                margin: 20px 0;
+            }
         }
-    }
-    .pro-img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .pro-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 @include big-pc-width {
+    #products-container {
+        padding: 0 80px;
+        .row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 40px;
+            grid-row-gap: 40px;
+            justify-content: center;
+            margin: 0 auto;
+            .col_hot {
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+        }
+    }
 }
 @include pc-width {
+    #products-container {
+        padding: 0 40px;
+        .row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            justify-content: center;
+            margin: 0 auto;
+            .col_hot {
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+        }
+    }
 }
 @include small-pc-width {
+    #products-container {
+        .row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            justify-content: center;
+            margin: 0 auto;
+            .col_hot {
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+        }
+    }
 }
 @include pad-width {
+    #products-container {
+        .row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            justify-content: center;
+            margin: 0 auto;
+            .col_hot {
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+        }
+    }
 }
 @include phone-width {
+    #products-container {
+        .row {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 20px;
+            justify-content: stretch;
+            margin: 0 auto;
+            .col_hot {
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
 }
 @include small-phone-width {
+    #products-container {
+        .row {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 20px;
+            justify-content: stretch;
+            margin: 0 auto;
+            .col_hot {
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
 }
