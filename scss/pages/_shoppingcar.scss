@@ -582,7 +582,7 @@
             margin: 35px 0 60px 0;
             li {
                 span {
-                    margin: 40px 30px;
+                    margin: 40px 10px;
                 }
             }
             .active {
@@ -619,15 +619,16 @@
                 padding: 15px 0;
                 display: flex;
                 flex-direction: column;
+                font-size: 0.8rem;
                 .item-pro {
-                    display: inline-flex;
-                    justify-content: center;
+                    display: flex;
                     align-items: center;
+                    justify-content: center;
                     .item-img {
                         img {
-                            width: 6rem;
+                            width: 4rem;
                             border-radius: 3px;
-                            margin: 10px 10px 10px 0px;
+                            margin: 10px 5px 10px 0px;
                         }
                     }
                     .count {
@@ -643,20 +644,20 @@
             .item-img {
                 display: flex;
                 align-items: center;
-                width: calc(100% - 280px);
+                width: calc(100% - 180px);
             }
             .item-price {
-                width: 100px;
+                width: 70px;
                 display: flex;
                 justify-content: center;
             }
             .count {
-                width: 100px;
+                width: 70px;
                 display: flex;
                 justify-content: center;
             }
             .operate {
-                width: 80px;
+                width: 40px;
                 display: flex;
                 justify-content: center;
             }
@@ -664,11 +665,8 @@
                 display: flex;
                 justify-content: flex-end;
                 width: auto;
-                padding: 20px 50px 20px 0;
-                font-size: 1.5rem;
-                span {
-                    margin-left: 20px;
-                }
+                padding: 20px 10px 20px 0;
+                font-size: 1.2rem;
             }
         }
     }

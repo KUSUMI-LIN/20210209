@@ -2278,7 +2278,7 @@ button {
     margin: 35px 0 60px 0;
   }
   #shoppingcar-main .shoppingcar-list li span {
-    margin: 40px 30px;
+    margin: 40px 10px;
   }
   #shoppingcar-main .shoppingcar-list .active {
     color: red;
@@ -2327,22 +2327,23 @@ button {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    font-size: 0.8rem;
   }
   #shoppingcar-main .cart-container .item-body .item-pro {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #shoppingcar-main .cart-container .item-body .item-pro .item-img img {
-    width: 6rem;
+    width: 4rem;
     border-radius: 3px;
-    margin: 10px 10px 10px 0px;
+    margin: 10px 5px 10px 0px;
   }
   #shoppingcar-main .cart-container .item-body .item-pro .count .countNum {
     margin: 0 5px;
@@ -2357,10 +2358,10 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: calc(100% - 280px);
+    width: calc(100% - 180px);
   }
   #shoppingcar-main .cart-container .item-price {
-    width: 100px;
+    width: 70px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2369,7 +2370,7 @@ button {
             justify-content: center;
   }
   #shoppingcar-main .cart-container .count {
-    width: 100px;
+    width: 70px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2378,7 +2379,7 @@ button {
             justify-content: center;
   }
   #shoppingcar-main .cart-container .operate {
-    width: 80px;
+    width: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2394,11 +2395,8 @@ button {
         -ms-flex-pack: end;
             justify-content: flex-end;
     width: auto;
-    padding: 20px 50px 20px 0;
-    font-size: 1.5rem;
-  }
-  #shoppingcar-main .cart-container .total span {
-    margin-left: 20px;
+    padding: 20px 10px 20px 0;
+    font-size: 1.2rem;
   }
 }
 
