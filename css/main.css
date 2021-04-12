@@ -965,15 +965,34 @@ button {
 .shoppingcarBtn a {
   color: #e6af2e;
   width: 100%;
+  height: 100%;
   text-align: center;
+  line-height: 3rem;
 }
 
-#shoppingcar-main .checkout-btn {
-  width: 1600px;
-  max-width: 100%;
-  display: block;
+.checkout-btn {
+  width: 100px;
+  height: 3rem;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 20px auto;
-  padding: 15px 0;
+  border: none;
+  border-radius: 3px;
+  background-color: #e6af2e;
+}
+
+.checkout-btn a {
+  color: #fbfffe;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.checkout-btn:hover {
+  background-color: #051014;
 }
 
 .shoppingcar-alert {
@@ -1237,7 +1256,7 @@ button {
   font-family: "Yusei Magic", sans-serif;
   font-size: 2rem;
   color: #e6af2e;
-  padding: 30px 0;
+  padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1248,11 +1267,11 @@ button {
 
 #products-container .container-fluid h2::before {
   content: "";
-  width: 5px;
+  width: 4px;
   height: 2.5rem;
   display: inline-block;
   background-color: #ef6461;
-  margin: 0 1.2rem -3px;
+  margin: 0 1.2rem;
   border-radius: 5px;
 }
 
@@ -1508,25 +1527,6 @@ button {
     margin-top: 20px;
     font-size: 1.2rem;
   }
-  #shoppingcar-main .shoppingcar-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 1rem;
-    margin: 35px 0 60px 0;
-  }
-  #shoppingcar-main .shoppingcar-list li span {
-    margin: 40px 30px;
-  }
-  #shoppingcar-main .shoppingcar-list .active {
-    color: red;
-  }
-  #shoppingcar-main .shoppingcar-list .active span {
-    border-bottom: red 1px dashed;
-  }
   #shoppingcar-main .cart-container {
     font-size: 1rem;
     width: 80%;
@@ -1660,25 +1660,6 @@ button {
   #shoppingcar-main .noshoppingCar .btn-sample {
     margin-top: 20px;
     font-size: 1.2rem;
-  }
-  #shoppingcar-main .shoppingcar-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 1rem;
-    margin: 35px 0 60px 0;
-  }
-  #shoppingcar-main .shoppingcar-list li span {
-    margin: 40px 30px;
-  }
-  #shoppingcar-main .shoppingcar-list .active {
-    color: red;
-  }
-  #shoppingcar-main .shoppingcar-list .active span {
-    border-bottom: red 1px dashed;
   }
   #shoppingcar-main .cart-container {
     font-size: 1rem;
@@ -1814,25 +1795,6 @@ button {
     margin-top: 20px;
     font-size: 1.2rem;
   }
-  #shoppingcar-main .shoppingcar-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 1rem;
-    margin: 35px 0 60px 0;
-  }
-  #shoppingcar-main .shoppingcar-list li span {
-    margin: 40px 30px;
-  }
-  #shoppingcar-main .shoppingcar-list .active {
-    color: red;
-  }
-  #shoppingcar-main .shoppingcar-list .active span {
-    border-bottom: red 1px dashed;
-  }
   #shoppingcar-main .cart-container {
     font-size: 1rem;
     width: 80%;
@@ -1884,9 +1846,9 @@ button {
             align-items: center;
   }
   #shoppingcar-main .cart-container .item-body .item-pro .item-img img {
-    width: 8rem;
+    width: 6rem;
     border-radius: 3px;
-    margin: 10px 40px 10px 0px;
+    margin: 10px 10px 10px 0px;
   }
   #shoppingcar-main .cart-container .item-body .item-pro .count .countNum {
     margin: 0 5px;
@@ -1898,10 +1860,10 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: calc(100% - 460px);
+    width: calc(100% - 380px);
   }
   #shoppingcar-main .cart-container .item-price {
-    width: 120px;
+    width: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1910,7 +1872,7 @@ button {
             justify-content: center;
   }
   #shoppingcar-main .cart-container .count {
-    width: 120px;
+    width: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1919,7 +1881,7 @@ button {
             justify-content: center;
   }
   #shoppingcar-main .cart-container .amount {
-    width: 120px;
+    width: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1928,7 +1890,7 @@ button {
             justify-content: center;
   }
   #shoppingcar-main .cart-container .operate {
-    width: 100px;
+    width: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1966,25 +1928,6 @@ button {
   #shoppingcar-main .noshoppingCar .btn-sample {
     margin-top: 20px;
     font-size: 1.2rem;
-  }
-  #shoppingcar-main .shoppingcar-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 1rem;
-    margin: 35px 0 60px 0;
-  }
-  #shoppingcar-main .shoppingcar-list li span {
-    margin: 40px 30px;
-  }
-  #shoppingcar-main .shoppingcar-list .active {
-    color: red;
-  }
-  #shoppingcar-main .shoppingcar-list .active span {
-    border-bottom: red 1px dashed;
   }
   #shoppingcar-main .cart-container {
     font-size: 1rem;
@@ -2116,25 +2059,6 @@ button {
   #shoppingcar-main .noshoppingCar .btn-sample {
     margin-top: 20px;
     font-size: 1.2rem;
-  }
-  #shoppingcar-main .shoppingcar-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 1rem;
-    margin: 35px 0 60px 0;
-  }
-  #shoppingcar-main .shoppingcar-list li span {
-    margin: 40px 30px;
-  }
-  #shoppingcar-main .shoppingcar-list .active {
-    color: red;
-  }
-  #shoppingcar-main .shoppingcar-list .active span {
-    border-bottom: red 1px dashed;
   }
   #shoppingcar-main .cart-container {
     font-size: 1rem;
@@ -2461,6 +2385,232 @@ button {
   color: #c1272d;
 }
 
+#main-info .container {
+  width: 50%;
+}
+
+#main-info .container h2 {
+  font-size: 2rem;
+  color: #e6af2e;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-info .container h2::before {
+  content: "";
+  width: 4px;
+  height: 2.5rem;
+  display: inline-block;
+  background-color: #ef6461;
+  margin: 0 1.2rem;
+  border-radius: 5px;
+}
+
+#main-info .container form {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+#main-info .container form .form-message {
+  height: 200px;
+}
+
+#main-payment .container .row .col {
+  margin: 0 auto 40px auto;
+}
+
+#main-payment .container .row .col table {
+  font-size: 1rem;
+}
+
+#main-payment .container .row .col table tfoot tr td,
+#main-payment .container .row .col table tfoot tr th,
+#main-payment .container .row .col table thead tr td,
+#main-payment .container .row .col table thead tr th,
+#main-payment .container .row .col table tbody tr td,
+#main-payment .container .row .col table tbody tr th {
+  padding: 10px 20px;
+}
+
+#main-payment .container .row .col table tfoot tr td:nth-child(2),
+#main-payment .container .row .col table tfoot tr th:nth-child(2),
+#main-payment .container .row .col table thead tr td:nth-child(2),
+#main-payment .container .row .col table thead tr th:nth-child(2),
+#main-payment .container .row .col table tbody tr td:nth-child(2),
+#main-payment .container .row .col table tbody tr th:nth-child(2) {
+  text-align: center;
+}
+
+#main-payment .container .row .col table tfoot tr td:last-child,
+#main-payment .container .row .col table tfoot tr th:last-child,
+#main-payment .container .row .col table thead tr td:last-child,
+#main-payment .container .row .col table thead tr th:last-child,
+#main-payment .container .row .col table tbody tr td:last-child,
+#main-payment .container .row .col table tbody tr th:last-child {
+  text-align: end;
+}
+
+#main-payment .container .row .col table tbody {
+  border-bottom: 1px #afafaf solid;
+}
+
+#main-payment .container .row .col table tfoot tr {
+  text-align: end;
+  color: red;
+  font-size: 1.2rem;
+}
+
+#main-payment .container .row .col table tfoot tr td span:first-child {
+  padding-right: 40px;
+}
+
+#main-payment .container .row .col .payment-info tbody tr {
+  border-bottom: 1px #afafaf solid;
+}
+
+#main-payment .container .row .col .payment-info tbody tr th {
+  padding: 20px 10px;
+}
+
+#main-payment .container .row .col .payment-info tbody tr:last-child td {
+  color: red;
+}
+
+#main-order .shoppingcar-list_order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+  margin: 35px 0 60px 0;
+}
+
+#main-order .shoppingcar-list_order li span {
+  margin: 40px 10px;
+}
+
+#main-order .shoppingcar-list_order .active {
+  color: red;
+}
+
+#main-order .shoppingcar-list_order .active span {
+  border-bottom: red 1px dashed;
+}
+
+#main-order .container .row .col {
+  margin: 0 auto 40px auto;
+  width: 100%;
+  max-width: 700px;
+}
+
+#main-order .container .row .col table {
+  font-size: 1rem;
+}
+
+#main-order .container .row .col table tfoot tr td,
+#main-order .container .row .col table tfoot tr th,
+#main-order .container .row .col table thead tr td,
+#main-order .container .row .col table thead tr th,
+#main-order .container .row .col table tbody tr td,
+#main-order .container .row .col table tbody tr th {
+  padding: 10px 20px;
+}
+
+#main-order .container .row .col table tfoot tr td:nth-child(2),
+#main-order .container .row .col table tfoot tr th:nth-child(2),
+#main-order .container .row .col table thead tr td:nth-child(2),
+#main-order .container .row .col table thead tr th:nth-child(2),
+#main-order .container .row .col table tbody tr td:nth-child(2),
+#main-order .container .row .col table tbody tr th:nth-child(2) {
+  text-align: center;
+}
+
+#main-order .container .row .col table tfoot tr td:last-child,
+#main-order .container .row .col table tfoot tr th:last-child,
+#main-order .container .row .col table thead tr td:last-child,
+#main-order .container .row .col table thead tr th:last-child,
+#main-order .container .row .col table tbody tr td:last-child,
+#main-order .container .row .col table tbody tr th:last-child {
+  text-align: end;
+}
+
+#main-order .container .row .col table tbody {
+  border-bottom: 1px #afafaf solid;
+}
+
+#main-order .container .row .col table tfoot tr {
+  text-align: end;
+  color: red;
+  font-size: 1.2rem;
+}
+
+#main-order .container .row .col table tfoot tr td span:first-child {
+  padding-right: 40px;
+}
+
+#main-order .container .row .col .payment-info tbody tr {
+  border-bottom: 1px #afafaf solid;
+}
+
+#main-order .container .row .col .payment-info tbody tr th {
+  padding: 20px 10px;
+}
+
+#main-order .container .row .col .order-btn {
+  width: 100px;
+  height: 3rem;
+  font-size: 1.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px auto;
+  border: none;
+  border-radius: 3px;
+  background-color: #e6af2e;
+}
+
+#main-order .container .row .col .order-btn a {
+  color: #fbfffe;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 3rem;
+}
+
+#main-order .container .row .col .order-btn:hover {
+  background-color: #051014;
+}
+
 h3 {
   font-size: 1.3rem;
+}
+
+.shoppingcar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+  margin: 35px 0 60px 0;
+}
+
+.shoppingcar-list li span {
+  margin: 40px 10px;
+}
+
+.shoppingcar-list .active {
+  color: red;
+}
+
+.shoppingcar-list .active span {
+  border-bottom: red 1px dashed;
 }

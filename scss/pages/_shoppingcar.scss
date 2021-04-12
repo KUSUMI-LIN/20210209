@@ -1,6 +1,6 @@
+//共同
 @include big-pc-width {
     #shoppingcar-main {
-        //購物進度條
         height: 1000px;
         .noshoppingCar {
             text-align: center;
@@ -11,23 +11,6 @@
             .btn-sample {
                 margin-top: 20px;
                 font-size: 1.2rem;
-            }
-        }
-        .shoppingcar-list {
-            display: flex;
-            justify-content: center;
-            font-size: 1rem;
-            margin: 35px 0 60px 0;
-            li {
-                span {
-                    margin: 40px 30px;
-                }
-            }
-            .active {
-                color: red;
-                span {
-                    border-bottom: red 1px dashed;
-                }
             }
         }
         //購物車系統
@@ -112,7 +95,6 @@
 }
 @include pc-width {
     #shoppingcar-main {
-        //購物進度條
         height: 1000px;
         .noshoppingCar {
             text-align: center;
@@ -123,23 +105,6 @@
             .btn-sample {
                 margin-top: 20px;
                 font-size: 1.2rem;
-            }
-        }
-        .shoppingcar-list {
-            display: flex;
-            justify-content: center;
-            font-size: 1rem;
-            margin: 35px 0 60px 0;
-            li {
-                span {
-                    margin: 40px 30px;
-                }
-            }
-            .active {
-                color: red;
-                span {
-                    border-bottom: red 1px dashed;
-                }
             }
         }
         //購物車系統
@@ -224,7 +189,6 @@
 }
 @include small-pc-width {
     #shoppingcar-main {
-        //購物進度條
         height: 1000px;
         .noshoppingCar {
             text-align: center;
@@ -235,23 +199,6 @@
             .btn-sample {
                 margin-top: 20px;
                 font-size: 1.2rem;
-            }
-        }
-        .shoppingcar-list {
-            display: flex;
-            justify-content: center;
-            font-size: 1rem;
-            margin: 35px 0 60px 0;
-            li {
-                span {
-                    margin: 40px 30px;
-                }
-            }
-            .active {
-                color: red;
-                span {
-                    border-bottom: red 1px dashed;
-                }
             }
         }
         //購物車系統
@@ -284,9 +231,9 @@
                     align-items: center;
                     .item-img {
                         img {
-                            width: 8rem;
+                            width: 6rem;
                             border-radius: 3px;
-                            margin: 10px 40px 10px 0px;
+                            margin: 10px 10px 10px 0px;
                         }
                     }
                     .count {
@@ -299,25 +246,25 @@
             .item-img {
                 display: flex;
                 align-items: center;
-                width: calc(100% - 460px);
+                width: calc(100% - 380px);
             }
             .item-price {
-                width: 120px;
+                width: 100px;
                 display: flex;
                 justify-content: center;
             }
             .count {
-                width: 120px;
+                width: 100px;
                 display: flex;
                 justify-content: center;
             }
             .amount {
-                width: 120px;
+                width: 100px;
                 display: flex;
                 justify-content: center;
             }
             .operate {
-                width: 100px;
+                width: 80px;
                 display: flex;
                 justify-content: center;
             }
@@ -336,7 +283,6 @@
 }
 @include pad-width {
     #shoppingcar-main {
-        //購物進度條
         height: 1000px;
         .noshoppingCar {
             text-align: center;
@@ -347,23 +293,6 @@
             .btn-sample {
                 margin-top: 20px;
                 font-size: 1.2rem;
-            }
-        }
-        .shoppingcar-list {
-            display: flex;
-            justify-content: center;
-            font-size: 1rem;
-            margin: 35px 0 60px 0;
-            li {
-                span {
-                    margin: 40px 30px;
-                }
-            }
-            .active {
-                color: red;
-                span {
-                    border-bottom: red 1px dashed;
-                }
             }
         }
         //購物車系統
@@ -449,7 +378,6 @@
 }
 @include phone-width {
     #shoppingcar-main {
-        //購物進度條
         height: 1000px;
         .noshoppingCar {
             text-align: center;
@@ -460,23 +388,6 @@
             .btn-sample {
                 margin-top: 20px;
                 font-size: 1.2rem;
-            }
-        }
-        .shoppingcar-list {
-            display: flex;
-            justify-content: center;
-            font-size: 1rem;
-            margin: 35px 0 60px 0;
-            li {
-                span {
-                    margin: 40px 30px;
-                }
-            }
-            .active {
-                color: red;
-                span {
-                    border-bottom: red 1px dashed;
-                }
             }
         }
         //購物車系統
@@ -562,7 +473,6 @@
 }
 @include small-phone-width {
     #shoppingcar-main {
-        //購物進度條
         height: 1000px;
         .noshoppingCar {
             text-align: center;

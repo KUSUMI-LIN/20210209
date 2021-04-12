@@ -1,0 +1,94 @@
+#main-order {
+    .shoppingcar-list_order {
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        margin: 35px 0 60px 0;
+        li {
+            span {
+                margin: 40px 10px;
+            }
+        }
+        .active {
+            color: red;
+            span {
+                border-bottom: red 1px dashed;
+            }
+        }
+    }
+    .container {
+        .row {
+            .col {
+                margin: 0 auto 40px auto;
+                width: 100%;
+                max-width: 700px;
+                table {
+                    font-size: 1rem;
+                    tfoot,
+                    thead,
+                    tbody {
+                        tr {
+                            td,
+                            th {
+                                padding: 10px 20px;
+                                &:nth-child(2) {
+                                    text-align: center;
+                                }
+                                &:last-child {
+                                    text-align: end;
+                                }
+                            }
+                        }
+                    }
+                    tbody {
+                        border-bottom: 1px rgb(175, 175, 175) solid;
+                    }
+                    tfoot {
+                        tr {
+                            text-align: end;
+                            color: red;
+                            font-size: 1.2rem;
+                            td {
+                                span {
+                                    &:first-child {
+                                        padding-right: 40px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .payment-info {
+                    tbody {
+                        tr {
+                            border-bottom: 1px rgb(175, 175, 175) solid;
+                            th {
+                                padding: 20px 10px;
+                            }
+                        }
+                    }
+                }
+                .order-btn {
+                    width: 100px;
+                    height: 3rem;
+                    font-size: 1.1rem;
+                    display: flex;
+                    margin: 20px auto;
+                    border: none;
+                    border-radius: 3px;
+                    background-color: $maincolor01;
+                    a {
+                        color: $Secondary-color03;
+                        width: 100%;
+                        height: 100%;
+                        text-align: center;
+                        line-height: 3rem;
+                    }
+                    &:hover {
+                        background-color: $Secondary-color01;
+                    }
+                }
+            }
+        }
+    }
+}

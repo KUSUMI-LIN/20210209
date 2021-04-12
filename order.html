@@ -20,11 +20,6 @@
 </head>
 
 <body>
-    <!--購物車警報-->
-    <div class="alert alert-warning alert-dismissible fade show shoppingcar-alert d-none" role="alert">
-        <p>商品已加入購物車</p>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
     <!--側邊選單-->
     <input type="checkbox" name="" id="side-menu-switch" class="d-block d-md-none">
     <div class="side-menu d-block d-md-none" id="side-menu">
@@ -131,47 +126,60 @@
             </div>
         </nav>
     </div>
-    <!--購物車開始-->
-    <main id="shoppingcar-main">
-        <div class="noshoppingCar">
-            <p>購物車內沒有商品哦</p>
-            <div><a href="products.html" class="btn btn-warning btn-sample" role="button">來去逛逛</a>
-            </div>
-        </div>
+    <main id="main-order">
         <!--購物進度條-->
-        <ul class="shoppingcar-list">
-            <a href="shoppingcar.html">
-                <li class="active"><span>確認結帳</span></li>
-            </a>
+        <ul class="shoppingcar-list_order">
+            <li><span>確認結帳</span></li>
             <i class="fas fa-chevron-right"></i>
             <li><span>填寫資訊</span></li>
             <i class="fas fa-chevron-right"></i>
             <li><span>確認付款</span></li>
             <i class="fas fa-chevron-right"></i>
-            <li><span>訂單成立</span></li>
+            <li class="active"><span>訂單成立</span></li>
         </ul>
-        <!--購物車系統-->
-        <div class="cart-container">
-            <div class="item-header">
-                <div class="item-img">商品名稱</div>
-                <div class="item-price">單價</div>
-                <div class="count">數量</div>
-                <div class="amount">小計</div>
-                <div class="operate"></div>
-            </div>
-            <div class="item-body">
-            </div>
-            <div class="total">總計
-                <span>$</span>
-                <div class="total-money"></div>
-            </div>
-            <div class="checkout-btn">
-                <a href="info.html">前往結帳</a>
+        <div class="container">
+            <div class="row">
+                <!--收件人資訊-->
+                <div class="col col-12">
+                    <table class="table caption-top payment-info">
+                        <caption>收件人資訊</caption>
+                        <tbody>
+                            <tr>
+                                <th scope="col" class="fw-bold">Email</th>
+                                <th scope="col">zxc123456@gmail.com</th>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="fw-bold">收件人姓名</th>
+                                <td>林XX</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="fw-bold">收件人手機/電話</th>
+                                <td>0912345678</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="fw-bold">收件人地址</th>
+                                <td>高雄市楠梓區</td>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="fw-bold">付款方式</th>
+                                <td class="paymethod-info"></td>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="fw-bold">付款狀態</th>
+                                <td class="payment-status"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--付款方式-->
+                <div class="col col-12">
+                    <div class="order-btn">
+                        <a href="products.html">繼續逛逛</a>
+                    </div>
+                </div>
             </div>
         </div>
-
     </main>
-    </div>
     <!--footer-->
     <footer>
         <div class="footer-grids">
@@ -192,6 +200,7 @@
     <script type="text/javascript" src="js/all.js"></script>
     <script type="text/javascript" src="js/data.js"></script>
     <script type="text/javascript" src="js/cart.js"></script>
+    <script type="text/javascript" src="js/payment.js"></script>
 </body>
 
 </html>
