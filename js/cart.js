@@ -1,11 +1,10 @@
 
 // 如果我們處理過了資料，就是當陣列為空陣列的時候，陣列長度為4，沒有資料
-
 var cartList = function () {
     // 判斷購物車是否為空
     var cartListData = localStorage.getItem('shopCart');
     var arr = JSON.stringify(cartListData);
-    if (arr.length == 4) {
+    if (arr.length == 4 || arr.length == 6) {
         // 沒有資料
         $('.shoppingcar-list,.item-header,.total,.checkout-btn').hide();
         $('.noshoppingCar').show();
