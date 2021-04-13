@@ -29,6 +29,42 @@ p {
                 margin: 0.5rem auto 0 auto;
             }
         }
+        .google-search {
+            display: inline-block;
+            position: absolute;
+            top: 0.7rem;
+            left: auto;
+            right: 150px;
+            margin-right: 1rem;
+            .gsc-search-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .gsc-input {
+                    .gsc-input-box {
+                        width: 200px; /*指定搜尋欄位寬度*/
+                        height: 25px;
+                        border: 0;
+                        padding-right: 2px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 2px;
+                    }
+                }
+            }
+            .gsc-search-button-v2 {
+                padding: 5px 13px;
+                border-radius: 5px;
+                border: 0;
+                &:hover {
+                    background-color: $maincolor01; /*設定搜尋鈕滑鼠移動底色*/
+                }
+            }
+            .gsc-input-box {
+                border-radius: 5px; /*搜尋框導圓角*/
+            }
+        }
         .navicon {
             position: absolute;
             top: 1rem;
@@ -102,6 +138,41 @@ p {
                 margin: 0.5rem auto 0 auto;
             }
         }
+        .google-search {
+            display: inline-block;
+            position: absolute;
+            top: 0.8rem;
+            left: auto;
+            right: 138px;
+            .gsc-search-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .gsc-input {
+                    .gsc-input-box {
+                        width: 200px; /*指定搜尋欄位寬度*/
+                        height: 25px;
+                        border: 0;
+                        padding-right: 2px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 2px;
+                    }
+                }
+            }
+            .gsc-search-button-v2 {
+                padding: 5px 13px;
+                border-radius: 5px;
+                border: 0;
+                &:hover {
+                    background-color: $maincolor01; /*設定搜尋鈕滑鼠移動底色*/
+                }
+            }
+            .gsc-input-box {
+                border-radius: 5px; /*搜尋框導圓角*/
+            }
+        }
         .navicon {
             position: absolute;
             top: 1rem;
@@ -172,6 +243,41 @@ p {
                 width: 10%;
                 display: block;
                 margin: 1rem auto 0 auto;
+            }
+        }
+        .google-search {
+            display: inline-block;
+            width: 200px;
+            position: absolute;
+            top: 0.7rem;
+            left: auto;
+            right: 100px;
+            .gsc-search-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .gsc-input {
+                    .gsc-input-box {
+                        width: 100%; /*指定搜尋欄位寬度*/
+                        height: 25px;
+                        border: 0;
+                        padding-right: 2px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+            .gsc-search-button-v2 {
+                padding: 5px 13px;
+                border-radius: 5px;
+                border: 0;
+                &:hover {
+                    background-color: $maincolor01; /*設定搜尋鈕滑鼠移動底色*/
+                }
+            }
+            .gsc-input-box {
+                border-radius: 5px; /*搜尋框導圓角*/
             }
         }
         .navicon {
@@ -330,26 +436,37 @@ p {
         z-index: 100;
         transform: translateX(-100%);
         transition: 0.3s;
-        form {
+        .google-search {
             display: flex;
-            margin: 0 10px 50px;
-            border-radius: 100px;
-            border: 1px solid #000;
-            input,
-            button {
-                border: none;
-                background-color: transparent;
-                padding: 5px 10px;
-                color: #000;
-                &:focus {
-                    outline: none;
+            width: 250px;
+            margin: 20px auto 10px;
+            .gsc-search-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .gsc-input {
+                    .gsc-input-box {
+                        width: 200px; /*指定搜尋欄位寬度*/
+                        height: 25px;
+                        border-style: 1px #000 solid;
+                        padding-right: 2px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 5px;
+                    }
                 }
             }
-            input {
-                width: 230px;
+            .gsc-search-button-v2 {
+                padding: 5px 13px;
+                border-radius: 5px;
+                border: 0;
+                &:hover {
+                    background-color: $maincolor01; /*設定搜尋鈕滑鼠移動底色*/
+                }
             }
-            button {
-                width: 50px;
+            .gsc-input-box {
+                border-radius: 5px; /*搜尋框導圓角*/
             }
         }
         nav {
@@ -464,26 +581,37 @@ p {
         z-index: 100;
         transform: translateX(-100%);
         transition: 0.3s;
-        form {
+        .google-search {
             display: flex;
-            margin: 0 10px 50px;
-            border-radius: 100px;
-            border: 1px solid #000;
-            input,
-            button {
-                border: none;
-                background-color: transparent;
-                padding: 5px 10px;
-                color: #000;
-                &:focus {
-                    outline: none;
+            width: 250px;
+            margin: 20px auto 10px;
+            .gsc-search-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .gsc-input {
+                    .gsc-input-box {
+                        width: 200px; /*指定搜尋欄位寬度*/
+                        height: 25px;
+                        border-style: 1px #000 solid;
+                        padding-right: 2px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 5px;
+                    }
                 }
             }
-            input {
-                width: 230px;
+            .gsc-search-button-v2 {
+                padding: 5px 13px;
+                border-radius: 5px;
+                border: 0;
+                &:hover {
+                    background-color: $maincolor01; /*設定搜尋鈕滑鼠移動底色*/
+                }
             }
-            button {
-                width: 50px;
+            .gsc-input-box {
+                border-radius: 5px; /*搜尋框導圓角*/
             }
         }
         nav {
@@ -599,26 +727,37 @@ p {
         z-index: 100;
         transform: translateX(-100%);
         transition: 0.3s;
-        form {
+        .google-search {
             display: flex;
-            margin: 0 10px 50px;
-            border-radius: 100px;
-            border: 1px solid #000;
-            input,
-            button {
-                border: none;
-                background-color: transparent;
-                padding: 5px 10px;
-                color: #000;
-                &:focus {
-                    outline: none;
+            width: 250px;
+            margin: 20px auto 10px;
+            .gsc-search-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .gsc-input {
+                    .gsc-input-box {
+                        width: 200px; /*指定搜尋欄位寬度*/
+                        height: 25px;
+                        border-style: 1px #000 solid;
+                        padding-right: 2px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 5px;
+                    }
                 }
             }
-            input {
-                width: 230px;
+            .gsc-search-button-v2 {
+                padding: 5px 13px;
+                border-radius: 5px;
+                border: 0;
+                &:hover {
+                    background-color: $maincolor01; /*設定搜尋鈕滑鼠移動底色*/
+                }
             }
-            button {
-                width: 50px;
+            .gsc-input-box {
+                border-radius: 5px; /*搜尋框導圓角*/
             }
         }
         nav {

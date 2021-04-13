@@ -92,6 +92,55 @@ body a:hover {
     display: block;
     margin: 0.5rem auto 0 auto;
   }
+  .header .google-search {
+    display: inline-block;
+    position: absolute;
+    top: 0.7rem;
+    left: auto;
+    right: 150px;
+    margin-right: 1rem;
+  }
+  .header .google-search .gsc-search-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .google-search .gsc-search-box .gsc-input .gsc-input-box {
+    width: 200px;
+    /*指定搜尋欄位寬度*/
+    height: 25px;
+    border: 0;
+    padding-right: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 2px;
+  }
+  .header .google-search .gsc-search-button-v2 {
+    padding: 5px 13px;
+    border-radius: 5px;
+    border: 0;
+  }
+  .header .google-search .gsc-search-button-v2:hover {
+    background-color: #e6af2e;
+    /*設定搜尋鈕滑鼠移動底色*/
+  }
+  .header .google-search .gsc-input-box {
+    border-radius: 5px;
+    /*搜尋框導圓角*/
+  }
   .header .navicon {
     position: absolute;
     top: 1rem;
@@ -163,6 +212,54 @@ body a:hover {
     display: block;
     margin: 0.5rem auto 0 auto;
   }
+  .header .google-search {
+    display: inline-block;
+    position: absolute;
+    top: 0.8rem;
+    left: auto;
+    right: 138px;
+  }
+  .header .google-search .gsc-search-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .google-search .gsc-search-box .gsc-input .gsc-input-box {
+    width: 200px;
+    /*指定搜尋欄位寬度*/
+    height: 25px;
+    border: 0;
+    padding-right: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 2px;
+  }
+  .header .google-search .gsc-search-button-v2 {
+    padding: 5px 13px;
+    border-radius: 5px;
+    border: 0;
+  }
+  .header .google-search .gsc-search-button-v2:hover {
+    background-color: #e6af2e;
+    /*設定搜尋鈕滑鼠移動底色*/
+  }
+  .header .google-search .gsc-input-box {
+    border-radius: 5px;
+    /*搜尋框導圓角*/
+  }
   .header .navicon {
     position: absolute;
     top: 1rem;
@@ -233,6 +330,54 @@ body a:hover {
     width: 10%;
     display: block;
     margin: 1rem auto 0 auto;
+  }
+  .header .google-search {
+    display: inline-block;
+    width: 200px;
+    position: absolute;
+    top: 0.7rem;
+    left: auto;
+    right: 100px;
+  }
+  .header .google-search .gsc-search-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .google-search .gsc-search-box .gsc-input .gsc-input-box {
+    width: 100%;
+    /*指定搜尋欄位寬度*/
+    height: 25px;
+    border: 0;
+    padding-right: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .google-search .gsc-search-button-v2 {
+    padding: 5px 13px;
+    border-radius: 5px;
+    border: 0;
+  }
+  .header .google-search .gsc-search-button-v2:hover {
+    background-color: #e6af2e;
+    /*設定搜尋鈕滑鼠移動底色*/
+  }
+  .header .google-search .gsc-input-box {
+    border-radius: 5px;
+    /*搜尋框導圓角*/
   }
   .header .navicon {
     position: absolute;
@@ -398,30 +543,53 @@ body a:hover {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
-  .side-menu form {
+  .side-menu .google-search {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 10px 50px;
-    border-radius: 100px;
-    border: 1px solid #000;
+    width: 250px;
+    margin: 20px auto 10px;
   }
-  .side-menu form input,
-  .side-menu form button {
-    border: none;
-    background-color: transparent;
-    padding: 5px 10px;
-    color: #000;
+  .side-menu .google-search .gsc-search-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .side-menu form input:focus,
-  .side-menu form button:focus {
-    outline: none;
+  .side-menu .google-search .gsc-search-box .gsc-input .gsc-input-box {
+    width: 200px;
+    /*指定搜尋欄位寬度*/
+    height: 25px;
+    border-style: 1px #000 solid;
+    padding-right: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 5px;
   }
-  .side-menu form input {
-    width: 230px;
+  .side-menu .google-search .gsc-search-button-v2 {
+    padding: 5px 13px;
+    border-radius: 5px;
+    border: 0;
   }
-  .side-menu form button {
-    width: 50px;
+  .side-menu .google-search .gsc-search-button-v2:hover {
+    background-color: #e6af2e;
+    /*設定搜尋鈕滑鼠移動底色*/
+  }
+  .side-menu .google-search .gsc-input-box {
+    border-radius: 5px;
+    /*搜尋框導圓角*/
   }
   .side-menu nav ul li {
     display: block;
@@ -537,30 +705,53 @@ body a:hover {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
-  .side-menu form {
+  .side-menu .google-search {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 10px 50px;
-    border-radius: 100px;
-    border: 1px solid #000;
+    width: 250px;
+    margin: 20px auto 10px;
   }
-  .side-menu form input,
-  .side-menu form button {
-    border: none;
-    background-color: transparent;
-    padding: 5px 10px;
-    color: #000;
+  .side-menu .google-search .gsc-search-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .side-menu form input:focus,
-  .side-menu form button:focus {
-    outline: none;
+  .side-menu .google-search .gsc-search-box .gsc-input .gsc-input-box {
+    width: 200px;
+    /*指定搜尋欄位寬度*/
+    height: 25px;
+    border-style: 1px #000 solid;
+    padding-right: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 5px;
   }
-  .side-menu form input {
-    width: 230px;
+  .side-menu .google-search .gsc-search-button-v2 {
+    padding: 5px 13px;
+    border-radius: 5px;
+    border: 0;
   }
-  .side-menu form button {
-    width: 50px;
+  .side-menu .google-search .gsc-search-button-v2:hover {
+    background-color: #e6af2e;
+    /*設定搜尋鈕滑鼠移動底色*/
+  }
+  .side-menu .google-search .gsc-input-box {
+    border-radius: 5px;
+    /*搜尋框導圓角*/
   }
   .side-menu nav ul li {
     display: block;
@@ -677,30 +868,53 @@ body a:hover {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
-  .side-menu form {
+  .side-menu .google-search {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 10px 50px;
-    border-radius: 100px;
-    border: 1px solid #000;
+    width: 250px;
+    margin: 20px auto 10px;
   }
-  .side-menu form input,
-  .side-menu form button {
-    border: none;
-    background-color: transparent;
-    padding: 5px 10px;
-    color: #000;
+  .side-menu .google-search .gsc-search-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .side-menu form input:focus,
-  .side-menu form button:focus {
-    outline: none;
+  .side-menu .google-search .gsc-search-box .gsc-input .gsc-input-box {
+    width: 200px;
+    /*指定搜尋欄位寬度*/
+    height: 25px;
+    border-style: 1px #000 solid;
+    padding-right: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 5px;
   }
-  .side-menu form input {
-    width: 230px;
+  .side-menu .google-search .gsc-search-button-v2 {
+    padding: 5px 13px;
+    border-radius: 5px;
+    border: 0;
   }
-  .side-menu form button {
-    width: 50px;
+  .side-menu .google-search .gsc-search-button-v2:hover {
+    background-color: #e6af2e;
+    /*設定搜尋鈕滑鼠移動底色*/
+  }
+  .side-menu .google-search .gsc-input-box {
+    border-radius: 5px;
+    /*搜尋框導圓角*/
   }
   .side-menu nav ul li {
     display: block;
@@ -2386,7 +2600,8 @@ button {
 }
 
 #main-info .container {
-  width: 50%;
+  width: 100%;
+  max-width: 700px;
 }
 
 #main-info .container h2 {
@@ -2422,6 +2637,8 @@ button {
 
 #main-payment .container .row .col {
   margin: 0 auto 40px auto;
+  width: 100%;
+  max-width: 700px;
 }
 
 #main-payment .container .row .col table {
@@ -2479,29 +2696,6 @@ button {
 
 #main-payment .container .row .col .payment-info tbody tr:last-child td {
   color: red;
-}
-
-#main-order .shoppingcar-list_order {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 1rem;
-  margin: 35px 0 60px 0;
-}
-
-#main-order .shoppingcar-list_order li span {
-  margin: 40px 10px;
-}
-
-#main-order .shoppingcar-list_order .active {
-  color: red;
-}
-
-#main-order .shoppingcar-list_order .active span {
-  border-bottom: red 1px dashed;
 }
 
 #main-order .container .row .col {
@@ -2592,25 +2786,29 @@ h3 {
   font-size: 1.3rem;
 }
 
-.shoppingcar-list {
+.shoppingcar-list,
+.shoppingcar-list_order {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin: 35px 0 60px 0;
 }
 
-.shoppingcar-list li span {
-  margin: 40px 10px;
+.shoppingcar-list li span,
+.shoppingcar-list_order li span {
+  margin: 0 7px;
 }
 
-.shoppingcar-list .active {
+.shoppingcar-list .active,
+.shoppingcar-list_order .active {
   color: red;
 }
 
-.shoppingcar-list .active span {
+.shoppingcar-list .active span,
+.shoppingcar-list_order .active span {
   border-bottom: red 1px dashed;
 }
