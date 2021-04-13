@@ -23,11 +23,10 @@ p {
 @include big-pc-width {
     .header {
         .navbar-brand {
-            img {
-                width: 8%;
-                display: block;
-                margin: 0.5rem auto 0 auto;
-            }
+            width: 8%;
+            display: block;
+            margin: 0 auto;
+            padding-top: 10px;
         }
         .google-search {
             display: inline-block;
@@ -132,11 +131,10 @@ p {
 @include pc-width {
     .header {
         .navbar-brand {
-            img {
-                width: 7%;
-                display: block;
-                margin: 0.5rem auto 0 auto;
-            }
+            width: 8%;
+            display: block;
+            margin: 0 auto;
+            padding-top: 10px;
         }
         .google-search {
             display: inline-block;
@@ -239,11 +237,10 @@ p {
 @include small-pc-width {
     .header {
         .navbar-brand {
-            img {
-                width: 10%;
-                display: block;
-                margin: 1rem auto 0 auto;
-            }
+            width: 10%;
+            display: block;
+            margin: 0 auto;
+            padding-top: 10px;
         }
         .google-search {
             display: inline-block;
@@ -358,11 +355,10 @@ p {
     //導覽列
     .header {
         .navbar-brand {
-            img {
-                width: 140px;
-                display: block;
-                margin: 10px auto 0 auto;
-            }
+            width: 140px;
+            display: block;
+            margin: 0 auto;
+            padding-top: 10px;
         }
         .navicon {
             position: absolute;
@@ -503,11 +499,10 @@ p {
     //導覽列
     .header {
         .navbar-brand {
-            img {
-                width: 100px;
-                display: block;
-                margin: 10px auto 0 auto;
-            }
+            width: 100px;
+            display: block;
+            margin: 0 auto;
+            padding-top: 10px;
         }
         .navicon {
             position: absolute;
@@ -648,12 +643,10 @@ p {
     //導覽列
     .header {
         .navbar-brand {
-            img {
-                width: 100px;
-                display: block;
-                margin-left: 10px;
-                margin-top: 10px;
-            }
+            width: 100px;
+            display: block;
+            margin-left: 10px;
+            padding-top: 10px;
         }
         .navicon {
             position: absolute;

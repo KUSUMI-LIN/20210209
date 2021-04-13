@@ -6,11 +6,11 @@ h3 {
 .shoppingcar-list_order {
     display: flex;
     justify-content: center;
-    font-size: 0.9rem;
     margin: 35px 0 60px 0;
     li {
         span {
             margin: 0 7px;
+            font-size: 0.9rem;
         }
     }
     .active {
